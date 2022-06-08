@@ -1,6 +1,6 @@
-ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code code rofi telegram-desktop brave-bin kitty element-desktop obs-studio pycharm-community-edition flameshot deluge git picom nitrogen
+ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio pycharm-community-edition flameshot deluge git picom nitrogen
 
 
-aur
+#aur
 
-freedownloadmanager lens-bin zoom
+#freedownloadmanager lens-bin zoomn brave-bin visual-studio-code-bin
