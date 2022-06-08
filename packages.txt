@@ -1,4 +1,4 @@
-ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio pycharm-community-edition flameshot deluge git picom nitrogen
+ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio pycharm-community-edition flameshot deluge git picom nitrogen vim github-cli
 
 
 #aur
