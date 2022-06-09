@@ -4,16 +4,20 @@ pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fi
 
 git clone 
 
-## 7z x .fonts.7z
+
+## extracting fonts
+7z x .fonts.7z
 
 mv -R .fonts/* /usr/share/fonts/
 
 
 ## nemo setup 
 
+
+## adding vs code extension
 wget https://raw.githubusercontent.com/mhsattarian/nemo-open-in-vscode/master/vscode.nemo_action -O ~/.local/share/nemo/actions/vscode.nemo_action
 
-
+## setting default terminal as xfce4-terminal for nemo
 gsettings set org.cinnamon.desktop.default-applications.terminal exec xfce4-terminal
 
 
