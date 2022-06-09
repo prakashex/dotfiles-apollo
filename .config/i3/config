@@ -168,7 +168,7 @@ bindsym $mod+r mode resize
 ######################################
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -271,8 +271,8 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+n exec /usr/bin/thunar
+##bindsym $mod+w exec /usr/bin/firefox
+bindsym $mod+n exec /usr/bin/nemo
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
@@ -340,7 +340,7 @@ for_window [class=TelegramDesktop] focus
 #
 # picom: https://wiki.archlinux.org/title/Picom
 # manpage: https://man.archlinux.org/man/picom.1.en
-exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom --experimental-backends -b
 #exec_always --no-startup-id killall picom && picom -b
 #exec_always --no-startup-id picom --config ~/.config/picom.conf
 
