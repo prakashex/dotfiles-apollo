@@ -3,4 +3,4 @@ ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code gl
 
 #aur
 
-freedownloadmanager lens-bin zoom brave-bin visual-studio-code-bin whatsdesk-bin
+freedownloadmanager lens-bin zoom brave-bin visual-studio-code-bin whatsdesk-bin google-chrome
