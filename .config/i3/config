@@ -174,7 +174,7 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec /home/prakash/.config/rofi/powermenu/powermenu.sh
+bindsym $mod+Shift+e exec ~/.config/rofi/powermenu/powermenu.sh
 
 # Lock the system
 # lock with a picture:
@@ -542,7 +542,7 @@ client.urgent		    $urgentred	$urgentred	$white		$purple		$yellowbrown
 
 #polybar
 
-exec_always --no-startup-id /home/prakash/.config/polybar/scripts/launch-polybar.sh &
+exec_always --no-startup-id ~/.config/polybar/scripts/launch-polybar.sh &
 
 
 #####################################
@@ -554,7 +554,7 @@ exec_always --no-startup-id /home/prakash/.config/polybar/scripts/launch-polybar
 #bindsym $mod+d exec rofi -no-lazy-grab -show drun -modi drun \
 #		-config $HOME/.config/rofi/launchers/colorful/style_5.rasi
 
-bindsym $mod+d exec /home/prakash/.config/rofi/launchers/ribbon/launcher.sh
+bindsym $mod+d exec ~/.config/rofi/launchers/ribbon/launcher.sh
 
 #bindsym F9 exec rofi -modi drun -show drun \
 #		-config ~/.config/rofi/rofidmenu.rasi
