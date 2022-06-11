@@ -2,7 +2,8 @@
 
 pacman -Syu
 
-pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge git picom nitrogen vim github-cli p7zip polybar nemo
+pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge git picom nitrogen vim github-cli p7zip polybar nemo libarchive
+
 
 ## dev tools
 ## node js remaining 
@@ -34,8 +35,8 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.z
 unzip FiraCode.zip -d /usr/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 unzip Meslo.zip -d /usr/share/fonts
-wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v1.0.zip
-unzip v1.0.zip -d /usr/share/fonts
+wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
+bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts
 fc-cache -vf
 
 
@@ -63,7 +64,7 @@ fc-cache -vf
 #~/.config/xfce4
 
 
-rm -Rf .bashrc .Xresources .bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/
+rm -Rf .bashrc .Xresources .bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/poybar ~/.config/picom ~/.config/kitty
 
 echo "dotfiles" >> .gitignore
 
