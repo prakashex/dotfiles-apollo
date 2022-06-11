@@ -1,8 +1,14 @@
+#!/bin/bash
+
 pacman -Syu
 
-pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio pycharm-community-edition flameshot deluge git picom nitrogen vim github-cli p7zip polybar nemo
+pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge git picom nitrogen vim github-cli p7zip polybar nemo
+
+## dev tools
+## node js remaining 
 
 
+pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs
 
 ## nemo setup 
 
@@ -10,14 +16,18 @@ pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fi
 ## adding vs code extension
 wget https://raw.githubusercontent.com/mhsattarian/nemo-open-in-vscode/master/vscode.nemo_action -O ~/.local/share/nemo/actions/vscode.nemo_action
 
-## setting default terminal as xfce4-terminal for nemo
-gsettings set org.cinnamon.desktop.default-applications.terminal exec xfce4-terminal
+## setting default terminal as kitty for nemo
+gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
+
+## if this doesn't work try this
+## gsettings set org.gnome.desktop.default-applications.terminal exec kitty
 
 
 ## themes
 
 cd /usr/share/themes/
 git clone https://github.com/EliverLara/Nordic.git
+cd
 
 ## fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
@@ -29,8 +39,42 @@ unzip v1.0.zip -d /usr/share/fonts
 fc-cache -vf
 
 
+## enabling hardware decoding on chrome and chromium acceleration
+
+## install the package libva-vdpau-driver-chromium and flag --enable-features=VaapiVideoDecoder to the google-chrome.desktop file in usr/share/applications## / while launching the application
+
+#  paru -S libva-vdpau-driver-chromium --noconfirm
+# update switch to firefox
+
 
 # remianinig --> automation script for putting dotfiles back into place and setting up git bare repo again to track dotfiles from where left of and push to the dotfiles apollo, better solution would be to create a seperate script for the same.
+
+
+##############  Starting script
+
+
+
+#Files to get rid of before config checkout :
+
+#.bashrc
+#.Xresources
+#.bash_profile
+#~/.config/gtk-3.0
+#~/.config/xfce4
+
+
+rm -Rf .bashrc .Xresources .bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/
+
+echo "dotfiles" >> .gitignore
+
+git clone --bare https://github.com/Prakashh21/dotfiles-apollo.git $HOME/dotfiles
+
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+config checkout 
+
+
+
 
 
 
