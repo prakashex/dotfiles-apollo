@@ -7,13 +7,13 @@ rm -Rf ~/.bashrc ~/.Xresources ~/.bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2
 
 echo "dotfiles" >> .gitignore
 
-rm -Rf $HOME/dotfiles
-
 git clone --bare https://github.com/Prakashh21/dotfiles-apollo.git $HOME/dotfiles
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 config checkout 
+
+exit 0
 
 # git config --global user.email "prakashope@gmail.com"
 # git config --global user.name "Prakash"
