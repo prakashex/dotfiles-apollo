@@ -1,4 +1,6 @@
 #!/bin/bash
+shopt -s expand_aliases
+
 
 pacman -Syu
 
@@ -30,7 +32,7 @@ gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
 
 cd /usr/share/themes/
 git clone https://github.com/EliverLara/Nordic.git
-cd ~
+cd /home/$SUDO_USER
 
 ## fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
