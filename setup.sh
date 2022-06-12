@@ -11,6 +11,8 @@ pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fi
 
 pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs
 
+
+yay -S freedownloadmanager lens-bin zoom brave-bin visual-studio-code-bin whatsdesk-bin google-chrome --noconfirm
 ## nemo setup 
 
 
@@ -28,7 +30,7 @@ gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
 
 cd /usr/share/themes/
 git clone https://github.com/EliverLara/Nordic.git
-cd
+cd ~
 
 ## fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
@@ -36,7 +38,7 @@ unzip FiraCode.zip -d /usr/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 unzip Meslo.zip -d /usr/share/fonts
 wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
-bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts
+bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
 fc-cache -vf
 
 
@@ -64,7 +66,7 @@ fc-cache -vf
 #~/.config/xfce4
 
 
-rm -Rf .bashrc .Xresources .bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/poybar ~/.config/picom ~/.config/kitty
+rm -Rf .bashrc .Xresources .bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/poybar ~/.config/picom ~/.config/kitty ~/.config/rofi
 
 echo "dotfiles" >> .gitignore
 
