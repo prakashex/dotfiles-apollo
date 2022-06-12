@@ -15,5 +15,9 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 config checkout 
 
+git config --global user.email "prakashope@gmail.com"
+git config --global user.name "Prakash"
+
+
 
 exit 0
