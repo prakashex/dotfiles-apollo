@@ -19,5 +19,3 @@ git config --global user.email "prakashope@gmail.com"
 git config --global user.name "Prakash"
 
 
-
-exit 0
