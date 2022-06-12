@@ -4,7 +4,7 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge git picom nitrogen vim github-cli p7zip polybar nemo libarchive
+sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge-gtk git picom nitrogen vim github-cli p7zip polybar nemo libarchive
 
 
 ## dev tools
