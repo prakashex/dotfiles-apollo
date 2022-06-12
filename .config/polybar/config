@@ -69,7 +69,7 @@ modules-left = i3 kernel-name
 ;modules-center = medium1 windowtitle spotify medium2
 modules-center = windowtitle spotify 
 ;modules-right =  right1 cpu memory volume date right2 shutdown
-modules-right =  pacman-updates temperature battery cpu memory volume date shutdown
+modules-right = temperature battery cpu memory volume date shutdown
 
 tray-position = right
 ;tray-padding = 2
