@@ -2,16 +2,16 @@
 shopt -s expand_aliases
 
 
-pacman -Syu
+sudo pacman -Syu
 
-pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge git picom nitrogen vim github-cli p7zip polybar nemo libarchive
+sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge git picom nitrogen vim github-cli p7zip polybar nemo libarchive
 
 
 ## dev tools
 ## node js remaining 
 
 
-pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs
+sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs
 
 
 yay -S freedownloadmanager lens-bin zoom brave-bin visual-studio-code-bin whatsdesk-bin google-chrome --noconfirm
@@ -31,16 +31,16 @@ gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
 ## themes
 
 cd /usr/share/themes/
-git clone https://github.com/EliverLara/Nordic.git
-cd /home/$SUDO_USER
+sudo git clone https://github.com/EliverLara/Nordic.git
+cd ~
 
 ## fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
-unzip FiraCode.zip -d /usr/share/fonts
+sudo unzip FiraCode.zip -d /usr/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
-unzip Meslo.zip -d /usr/share/fonts
+sudo unzip Meslo.zip -d /usr/share/fonts
 wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
-bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
+sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
 fc-cache -vf
 
 
@@ -68,7 +68,7 @@ fc-cache -vf
 #~/.config/xfce4
 
 
-rm -Rf .bashrc .Xresources .bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/poybar ~/.config/picom ~/.config/kitty ~/.config/rofi
+rm -Rf ~/.bashrc ~/.Xresources ~/.bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/polybar ~/.config/picom ~/.config/kitty ~/.config/rofi
 
 echo "dotfiles" >> .gitignore
 
@@ -79,7 +79,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 config checkout 
 
 
-
+exit 0
 
 
 
