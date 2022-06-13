@@ -72,6 +72,11 @@ modules-center = windowtitle spotify
 modules-right =  pacman-updates temperature battery cpu memory volume date shutdown
 
 tray-position = right
+tray-padding = 5
+tray-background = ${colors.black}
+tray-maxsize = 26
+tray-detached = false
+
 ;tray-padding = 2
 ;tray-background = #0063ff
 
@@ -691,8 +696,8 @@ content = " ﴚ"
 content-foreground = ${colors.red}
 content-padding = 1
 
-click-left = $HOME/.config/polybar/scripts/rofi-poweroff.sh
-click-right = $HOME/.config/polybar/scripts/rofi-poweroff.sh 
+click-left = ~/.config/rofi/powermenu/powermenu.sh
+click-right = ~/.config/rofi/powermenu/powermenu.sh 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [settings]
 screenchange-reload = true
