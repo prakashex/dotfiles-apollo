@@ -310,11 +310,12 @@ set $ws10 "10"
 assign [class="Xfce4-terminal"] $ws1
 assign [class="(?i)firefox"] $ws2
 assign [class="Google-chrome"] $ws2
-assign [class="Thunar"] $ws3
+#assign [class="Thunar"] $ws3
 assign [class="Code"] $ws4
 assign [class="TelegramDesktop"] $ws5
 assign [class="Element"] $ws5
-
+assign [class="whatdesk"] $ws5
+assign [class="Nemo"] $ws3
 
 # automatic set focus new window if it opens on another workspace then the current:
 for_window [class=Xfce4-terminal] focus
