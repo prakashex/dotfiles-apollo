@@ -11,10 +11,10 @@ sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts t
 ## node js remaining 
 
 
-sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs
+sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
 
 
-yay -S freedownloadmanager lens-bin zoom brave-bin visual-studio-code-bin whatsdesk-bin google-chrome --noconfirm
+yay -S freedownloadmanager lens-bin zoom brave-bin visual-studio-code-bin google-chrome --noconfirm
 ## nemo setup 
 
 
