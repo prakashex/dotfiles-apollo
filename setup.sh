@@ -4,7 +4,7 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop kitty element-desktop obs-studio  flameshot deluge-gtk git picom nitrogen vim github-cli p7zip polybar nemo libarchive xpdf
+sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git picom nitrogen vim github-cli p7zip polybar nemo libarchive xpdf
 
 
 ## dev tools
@@ -22,7 +22,7 @@ yay -S freedownloadmanager lens-bin zoom brave-bin visual-studio-code-bin google
 wget https://raw.githubusercontent.com/mhsattarian/nemo-open-in-vscode/master/vscode.nemo_action -O ~/.local/share/nemo/actions/vscode.nemo_action
 
 ## setting default terminal as kitty for nemo
-gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
+gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 
 ## if this doesn't work try this
 ## gsettings set org.gnome.desktop.default-applications.terminal exec kitty
