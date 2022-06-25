@@ -6,10 +6,9 @@ sudo pacman -Syu
 
 sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git picom nitrogen vim github-cli p7zip polybar nemo libarchive xpdf
 
+## change default image pdf viewer and image viewer
 
 ## dev tools
-## node js remaining 
-
 
 sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
 
