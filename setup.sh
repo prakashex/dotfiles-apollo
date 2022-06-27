@@ -4,11 +4,14 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git picom nitrogen vim github-cli p7zip polybar nemo libarchive xpdf
+sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf
 
 ## change default image pdf viewer and image viewer
 
 ## dev tools
+## install custom package for picom
+## install nvidia drivers
+
 
 sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
 
