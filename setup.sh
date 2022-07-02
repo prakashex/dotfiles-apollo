@@ -18,6 +18,11 @@ sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts t
 ## sudo pacman -S nvidia-installer-dkms -- this package is already installed above.
 ## sudo nvidia-installer-dkms
 ## sudo systemctl reboot
+
+
+## Firefox theme
+## https://github.com/mut-ex/minimal-functional-fox
+
 sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
 
 
