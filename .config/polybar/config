@@ -23,6 +23,20 @@ primary = #ffb52a
 secondary = #e60053
 alert = #B48EAD
 
+;cyan = #a3be8c 
+;aqua = #88c0d0 
+;red = #bf616a 
+;yellow = #ebcb8b 
+;green = #bf616a 
+;orange = #d08770 
+;magenta = #5e81ac 
+;white = #eceff4 
+;pink =  #434c5e 
+;blue =  #434c5e 
+;black =  #2e3440 
+
+
+## default colors
 cyan = #87c095
 aqua = #8FBCBB
 red = #e68183

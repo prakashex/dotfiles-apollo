@@ -316,6 +316,7 @@ assign [class="TelegramDesktop"] $ws5
 assign [class="Element"] $ws5
 assign [class="whatdesk"] $ws5
 assign [class="Nemo"] $ws3
+assign [class="crx_eegjccgfpodhobglndeojahnffghpcjk"] $ws8
 
 # automatic set focus new window if it opens on another workspace then the current:
 for_window [class=Xfce4-terminal] focus
@@ -343,7 +344,15 @@ for_window [class=TelegramDesktop] focus
 #
 # picom: https://wiki.archlinux.org/title/Picom
 # manpage: https://man.archlinux.org/man/picom.1.en
-exec_always --no-startup-id picom --experimental-backends -b
+
+## current backends
+
+#exec_always --no-startup-id picom --experimental-backends -b
+exec_always --no-startup-id picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 &
+
+
+
+
 #exec_always --no-startup-id killall picom && picom -b
 #exec_always --no-startup-id picom --config ~/.config/picom.conf
 
@@ -352,7 +361,7 @@ exec_always --no-startup-id picom --experimental-backends -b
 #############################################
 
 #get auth work with polkit-gnome
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # dex execute .desktop files
 # keep in mind that it can cause issues
@@ -473,7 +482,7 @@ set $yellowbrown	#e1b700
 
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    $lightblue	$darkblue	$white		$purple		$mediumgrey
+client.focused		    $purple	$darkblue	$white		$purple		$purple
 client.unfocused	    $darkblue	$darkblue	$grey		$purple		$darkgrey
 client.focused_inactive	$darkblue	$darkblue	$grey		$purple		$black
 client.urgent		    $urgentred	$urgentred	$white		$purple		$yellowbrown
