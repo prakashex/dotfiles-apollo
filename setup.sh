@@ -4,7 +4,7 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf nvidia-installer-dkms
+sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf nvidia-installer-dkms nemo-fileroller
 
 ## change default image pdf viewer and image viewer
 
