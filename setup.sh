@@ -88,6 +88,7 @@ git clone --bare https://github.com/Prakashh21/dotfiles-apollo.git $HOME/dotfile
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 config checkout 
+config config status.showUntrackedFiles no
 
 git config --global user.email "prakashope@gmail.com"
 git config --global user.name "Prakash"
