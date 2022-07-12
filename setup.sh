@@ -26,7 +26,7 @@ sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts t
 sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
 
 
-yay -S freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome --noconfirm
+yay -S freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 --noconfirm
 ## nemo setup 
 
 
