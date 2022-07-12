@@ -4,7 +4,7 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf nvidia-installer-dkms nemo-fileroller
+sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf nvidia-installer-dkms nemo-fileroller intel-media-driver
 
 ## change default image pdf viewer and image viewer
 
@@ -22,6 +22,10 @@ sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts t
 
 ## Firefox theme
 ## https://github.com/mut-ex/minimal-functional-fox
+
+## to enable webrendering on firefox 
+
+## install intel-media-driver (added in the above package list)
 
 sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
 
