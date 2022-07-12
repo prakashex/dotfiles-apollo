@@ -79,6 +79,10 @@ fc-cache -vf
 #~/.config/gtk-3.0
 #~/.config/xfce4
 
+
+## firefox -- https://github.com/mut-ex/minimal-functional-fox
+
+
 rm -Rf ~/.bashrc ~/.Xresources ~/.bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/polybar ~/.config/picom ~/add-dots.sh ~/.config/kitty ~/.config/rofi ~/.zshrc ~/.zprofile ~/packages.txt ~/setup.sh ~/.Xnord
 
 echo "dotfiles" >> .gitignore
