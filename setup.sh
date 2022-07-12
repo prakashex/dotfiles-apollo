@@ -27,6 +27,12 @@ sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts t
 
 ## install intel-media-driver (added in the above package list)
 
+## enable these fields in firefox about:config 
+
+##    gfx.webrender.all -- Set this to TRUE to enable WebRender, or to FALSE to disable it.
+##    gfx.webrender.software -- This preferences determines if the CPU is used. If this is set to TRUE, WebRender will use the CPU, if set to FALSE, it will use the GPU but only if the GPU is capable.
+##    gfx.webrender.compositor	true
+
 sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
 
 
