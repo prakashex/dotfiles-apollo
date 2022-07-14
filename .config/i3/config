@@ -172,7 +172,7 @@ bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+q kill
-bindsym $mod+Shift+i exec xed ~/.config/i3/config ~/.config/polybar/config
+bindsym $mod+Shift+i exec xed ~/.config/i3/config ~/.config/polybar/config ~/.config/picom/picom.conf
 
 # exit-menu
 bindsym $mod+Shift+e exec ~/.config/rofi/powermenu/powermenu.sh
