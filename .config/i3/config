@@ -172,7 +172,7 @@ bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+q kill
-bindsym $mod+Shift+i exec xed ~/.config/i3/config
+bindsym $mod+Shift+i exec xed ~/.config/i3/config ~/.config/polybar/config
 
 # exit-menu
 bindsym $mod+Shift+e exec ~/.config/rofi/powermenu/powermenu.sh
@@ -349,7 +349,7 @@ for_window [class=TelegramDesktop] focus
 ## current backends
 
 #exec_always --no-startup-id picom --experimental-backends -b
-exec_always --no-startup-id picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 &
+exec_always --no-startup-id picom --experimental-backends -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 &
 
 
 
