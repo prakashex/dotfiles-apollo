@@ -351,8 +351,9 @@ for_window [class=TelegramDesktop] focus
 #exec_always --no-startup-id picom --experimental-backends -b
 exec_always --no-startup-id picom --experimental-backends -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 &
 
+## previous working config
 
-
+#exec_always --no-startup-id picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 & 
 
 #exec_always --no-startup-id killall picom && picom -b
 #exec_always --no-startup-id picom --config ~/.config/picom.conf
@@ -612,8 +613,8 @@ exec_always --no-startup-id ~/.config/polybar/scripts/launch-polybar.sh &
 #bindsym $mod+shift+t exec xfce4-terminal -T dropdown
 
 
-bindsym $mod+m scratchpad show;
-for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 4,resize set 1025 600
+bindsym $mod+m scratchpad show; move position center
+for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 4,resize set 1025 600 
 
 
 #exec_always --no-startup-id xfce4-terminal -T dropdown & // -T or --title both flags are the same used to give title to the window.
