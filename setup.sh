@@ -4,7 +4,7 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop glances rofi telegram-desktop alacritty element-desktop obs-studio  flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf nvidia-installer-dkms nemo-fileroller intel-media-driver
+sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf nvidia-installer-dkms nemo-fileroller intel-media-driver intel-gpu-tools
 
 ## change default image pdf viewer and image viewer
 
@@ -29,15 +29,15 @@ sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts t
 
 ## enable these fields in firefox about:config 
 
-##    gfx.webrender.all -- Set this to TRUE to enable WebRender, or to FALSE to disable it.
-##    gfx.webrender.software -- This preferences determines if the CPU is used. If this is set to TRUE, WebRender will use the CPU, if set to FALSE, it will use the GPU but only if the GPU is capable.
+##    gfx.webrender.all -- true Set this to TRUE to enable WebRender, or to FALSE to disable it.
+##    gfx.webrender.software -- false This preferences determines if the CPU is used. If this is set to TRUE, WebRender will use the CPU, if set to FALSE, it will use the GPU but only if the GPU is capable.
 ##    gfx.webrender.compositor	true
 
-sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python meson uthash
+sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python meson uthash 
 
 # uthash is a build dependency for picom
 
-yay -S freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 --noconfirm
+yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 --noconfirm
 
 
 ## themes
