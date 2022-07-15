@@ -557,6 +557,73 @@ client.urgent		    $urgentred	$urgentred	$white		$purple		$yellowbrown
 
 exec_always --no-startup-id ~/.config/polybar/scripts/launch-polybar.sh &
 
+#################################################################################################
+
+#scratchpad
+
+#bindsym $mod+m+Return exec xfce4-terminal --name dropdown
+#bindsym $mod+m instance=["dropdown"] scratchpad show; instance=["dropdown"] move position center
+
+#exec_always --no-startup-id xfce4-terminal --class xfce4-terminal,xfce4-terminal
+
+#bindsym $mod+m [class="Xfce4-terminal"] scratchpad show; move position center
+#bindsym $mod+n [class="ttrm"] scratchpad show; move position center
+#bindsym $mod+v [class="mus"] scratchpad show; move position center
+#bindsym $mod+c [class="fm"] scratchpad show; move position center
+#exec_always --no-startup-id pgrep -f '^xfce4-terminal --class Xfce4-terminal,Xfce4-terminal' || xfce4-terminal --class Xfce4-terminal,Xfce4-terminal
+#exec_always --no-startup-id pgrep -f '^alacritty --class ttrm,ttrm' || alacritty --class ttrm,ttrm
+#exec_always --no-startup-id pgrep -f '^alacritty --class mus,mus' || alacritty --class mus,mus -e ncmpcpp
+#exec_always --no-startup-id pgrep -f '^alacritty --class fm,fm' || alacritty --class fm,fm -e ranger
+
+
+#bindsym $mod+Control+Return exec xfce4-terminal --title dropdown 
+#& exec st -n scratch -e ncmpcpp & exec kitty --name ranger -e ranger
+#bindsym $mod+m [instance="dropdown"] scratchpad show; move position center
+
+
+
+
+#bindsym $mod+Control+Return exec kitty --name dropdown & exec st -n scratch -e ncmpcpp & exec kitty --name ranger -e ranger
+#bindsym $mod+m [instance="dropdown"] scratchpad show; move position center
+
+
+#bindsym $altmod+Return [instance="scratch"] scratchpad show; move position center
+
+# ranger
+#bindsym $altmod+Shift+Return exec kitty --name ranger -e ranger
+#bindsym $mod+Control+f [instance="ranger"] scratchpad show; move position center
+
+
+
+
+
+#for_window [instance="dropdown"] floating enable
+#for_window [instance="dropdown"] resize set 625 400
+#for_window [instance="dropdown"] move scratchpad
+#for_window [instance="dropdown"] border pixel 5
+#exec --no-startup-id st -n dropdown
+#bindsym $mod+Control+p [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
+
+
+#bindsym $mod+Shift+minus move scratchpad
+#bindsym $mod+minus scratchpad show
+
+bindsym $mod+shift+t exec xfce4-terminal -T dropdown
+bindsym $mod+m scratchpad show;
+for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 5,resize set 1025 600
+
+
+exec_always --no-startup-id xfce4-terminal -T dropdown &
+
+
+
+
+
+
+
+
+
+
 
 #####################################
 # Application menu handled by rofi: #
