@@ -4,7 +4,8 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf nvidia-installer-dkms nemo-fileroller intel-media-driver intel-gpu-tools
+sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf 
+-installer-dkms nemo-fileroller intel-media-driver intel-gpu-tools
 
 ## change default image pdf viewer and image viewer
 
@@ -16,12 +17,16 @@ sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts 
 ## install nvidia stuff.
 
 ## sudo pacman -S nvidia-installer-dkms -- this package is already installed above.
+## nvidia-installer-dkms -t
 ## sudo nvidia-installer-dkms
 ## sudo systemctl reboot
 
 
 ## Firefox theme
 ## https://github.com/mut-ex/minimal-functional-fox
+## for firefox theme to work
+## toolkit.legacyUserProfileCustomizations.stylesheets = true
+## install script -----> sh -c "$(curl -fsSL https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/install.sh)"
 
 ## to enable webrendering on firefox 
 
