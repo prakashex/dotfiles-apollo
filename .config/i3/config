@@ -608,12 +608,19 @@ exec_always --no-startup-id ~/.config/polybar/scripts/launch-polybar.sh &
 #bindsym $mod+Shift+minus move scratchpad
 #bindsym $mod+minus scratchpad show
 
-bindsym $mod+shift+t exec xfce4-terminal -T dropdown
+#no need for this invoking as exec_always below 
+#bindsym $mod+shift+t exec xfce4-terminal -T dropdown
+
+
 bindsym $mod+m scratchpad show;
-for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 5,resize set 1025 600
+for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 4,resize set 1025 600
 
 
-exec_always --no-startup-id xfce4-terminal -T dropdown &
+#exec_always --no-startup-id xfce4-terminal -T dropdown & // -T or --title both flags are the same used to give title to the window.
+
+
+
+exec_always --no-startup-id pgrep -f '^xfce4-terminal --title dropdown' || xfce4-terminal --title dropdown
 
 
 
