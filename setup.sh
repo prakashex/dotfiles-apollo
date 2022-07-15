@@ -33,21 +33,11 @@ sudo pacman -S ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts t
 ##    gfx.webrender.software -- This preferences determines if the CPU is used. If this is set to TRUE, WebRender will use the CPU, if set to FALSE, it will use the GPU but only if the GPU is capable.
 ##    gfx.webrender.compositor	true
 
-sudo pacman -S pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python
+sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python meson uthash
 
+# uthash is a build dependency for picom
 
 yay -S freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 --noconfirm
-## nemo setup 
-
-
-## adding vs code extension
-wget https://raw.githubusercontent.com/mhsattarian/nemo-open-in-vscode/master/vscode.nemo_action -O ~/.local/share/nemo/actions/vscode.nemo_action
-
-## setting default terminal as kitty for nemo
-gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
-
-## if this doesn't work try this
-## gsettings set org.gnome.desktop.default-applications.terminal exec kitty
 
 
 ## themes
@@ -65,6 +55,24 @@ wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
 sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
 fc-cache -vf
 
+
+######################################################################################################
+
+## nemo setup 
+
+
+## adding vs code extension
+wget https://raw.githubusercontent.com/mhsattarian/nemo-open-in-vscode/master/vscode.nemo_action -O ~/.local/share/nemo/actions/vscode.nemo_action
+
+## setting default terminal as kitty for nemo
+
+gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
+
+## if this doesn't work try this
+## gsettings set org.gnome.desktop.default-applications.terminal exec kitty
+
+
+######################################################################################################
 
 ## enabling hardware decoding on chrome and chromium acceleration
 
