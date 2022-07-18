@@ -10,3 +10,5 @@ meson --buildtype=release . build
 ninja -C build
 
 sudo ninja -C build install
+
+rm -R ~/source
