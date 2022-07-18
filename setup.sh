@@ -7,7 +7,11 @@ sudo pacman -Syu
 sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf 
 -installer-dkms nemo-fileroller intel-media-driver intel-gpu-tools
 
-## change default image pdf viewer and image viewer
+
+
+
+## get mirrors -- wget https://raw.githubusercontent.com/Prakashh21/dotfiles-apollo/apollo/mirrors -O /etc/pacman.d/mirrorlist
+
 
 ## dev tools
 ## install custom package for picom
