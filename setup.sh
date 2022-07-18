@@ -41,6 +41,8 @@ sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts 
 ##    gfx.webrender.all -- true Set this to TRUE to enable WebRender, or to FALSE to disable it.
 ##    gfx.webrender.software -- false This preferences determines if the CPU is used. If this is set to TRUE, WebRender will use the CPU, if set to FALSE, it will use the GPU but only if the GPU is capable.
 ##    gfx.webrender.compositor	true
+##    media.ffmpeg.vaapi.enabled  = true
+##    media.rdd-vpx.enabled = true
 
 sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python meson uthash 
 
