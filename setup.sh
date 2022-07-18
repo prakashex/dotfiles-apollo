@@ -175,4 +175,11 @@ exit 0
 
 
 
+## install zsh and oh-my-zsh
+
+## sudo pacman -Sy zsh zsh-completions
+## chsh -s /bin/zsh 
+##sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+## yay -Sy  zsh-theme-powerlevel9k-git --noconfirm
+## echo 'source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme' >> ~/.zshrc
 
