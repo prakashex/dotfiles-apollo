@@ -89,6 +89,7 @@ export PATH="/home/prakash/.local/bin:$PATH"
 # alias pacdiff=eos-pacdiff
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias kill='sudo killall -q'
 
 #####powerline 
 
