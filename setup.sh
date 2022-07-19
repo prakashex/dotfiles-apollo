@@ -4,13 +4,22 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo libarchive xpdf 
--installer-dkms nemo-fileroller intel-media-driver intel-gpu-tools
+sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts neofetch ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo nemo-fileroller intel-media-driver intel-gpu-tools libarchive xpdf 
+-installer-dkms 
 
 
 
 
 ## get mirrors -- wget https://raw.githubusercontent.com/Prakashh21/dotfiles-apollo/apollo/mirrors -O /etc/pacman.d/mirrorlist
+
+
+## optional
+## dracula gtk
+## gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+## gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+
+## dracula icon
+## gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
 
 ## dev tools
@@ -48,14 +57,20 @@ sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-op
 
 # uthash is a build dependency for picom
 
-yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 --noconfirm
+yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 dracula-gtk-theme numix-circle-icon-theme-git --noconfirm
 
 
 ## themes
 
-cd /usr/share/themes/
-sudo git clone https://github.com/EliverLara/Nordic.git
+#migrated from nordic to dracula
+#cd /usr/share/themes/
+#sudo git clone https://github.com/EliverLara/Nordic.git
+#cd ~
+
 cd ~
+wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
+sudo unzip Dracula.zip -d /usr/share/icons
+
 
 ## fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
