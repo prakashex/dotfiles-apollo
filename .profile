@@ -1,0 +1,6 @@
+export TERMINAL=xfce4-terminal
+export MOZ_DISABLE_RDD_SANDBOX=1
+export LIBVA_DRIVER_NAME=iHD
+export MOZ_X11_EGL=1
+#export QT_QPA_PLATFORMTHEME=qt5ct
+#export QT_QPA_PLATFORMTHEME=qt6ct
