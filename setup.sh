@@ -4,7 +4,7 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -Sy ttf-font-awesome noto-fonts-emoji noto-fonts neofetch ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo nemo-fileroller intel-media-driver intel-gpu-tools libarchive xpdf 
+sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts neofetch ttf-fira-code htop btop rofi telegram-desktop alacritty element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo nemo-fileroller intel-media-driver intel-gpu-tools libva libva-utils libarchive xpdf 
 -installer-dkms 
 
 
