@@ -220,6 +220,24 @@ label-separator =
 ; Separator in between workspaces
 ; label-separator = |
 
+; [module/i3]
+; type=internal/i3
+
+; scroll-up = "#i3.prev"
+; scroll-down = "#i3.next"
+; pin-workspaces = true
+
+
+
+
+
+
+
+
+
+
+
+
 [module/i3]
 type = internal/i3
 
@@ -229,7 +247,7 @@ type = internal/i3
 ; on different bars
 ;
 ; Default: false
-pin-workspaces = false
+pin-workspaces = true
 
 ; Show urgent workspaces regardless of whether the workspace is actually hidden 
 ; by pin-workspaces.
@@ -271,11 +289,11 @@ reverse-scroll = false
 fuzzy-match = false
 
 
-ws-icon-0 = 1;♚
-ws-icon-1 = 2;♛
-ws-icon-2 = 3;♜
-ws-icon-3 = 4;♝
-ws-icon-4 = 5;♞
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;﬏
+ws-icon-4 = 5;
 ws-icon-default = ♟
 ; NOTE: You cannot skip icons, e.g. to get a ws-icon-6
 ; you must also define a ws-icon-5.
@@ -299,11 +317,11 @@ format = <label-state> <label-mode>
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-label-focused = %icon% %name%
+label-focused = %icon%
 label-focused-foreground = #ffffff
 label-focused-background = #1F4690
 ;label-focused-underline = #fba922
-label-focused-padding-right = 1
+label-focused-padding = 1
 
 ; Available tokens:
 ;   %name%
@@ -311,8 +329,8 @@ label-focused-padding-right = 1
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-; label-unfocused = %index%
-; label-unfocused-padding = 4
+ label-unfocused = %icon%
+ label-unfocused-padding = 1
 
 ; Available tokens:
 ;   %name%
@@ -322,7 +340,7 @@ label-focused-padding-right = 1
 ; Default: %icon% %name%
 label-visible = %icon%
 label-visible-underline = #555555
-label-visible-padding = 2
+label-visible-padding = 1
 
 ; Available tokens:
 ;   %name%
@@ -330,14 +348,14 @@ label-visible-padding = 2
 ;   %index%
 ;   %output%
 ; Default: %icon% %name%
-; label-urgent = %index%
+ label-urgent = %icon%
 ; label-urgent-foreground = #000000
 ; label-urgent-background = #bd2c40
-; label-urgent-padding = 4
+ label-urgent-padding = 1
 
 ; Separator in between workspaces
-; label-separator = |
-; label-separator-padding = 2
+ label-separator = |
+ label-separator-padding = 0
 ; label-separator-foreground = #ffb52a
 
 
