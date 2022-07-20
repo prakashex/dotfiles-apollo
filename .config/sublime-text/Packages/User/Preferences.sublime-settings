@@ -1,0 +1,10 @@
+{
+	"theme": "Adaptive.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"remember_workspace":false,
+	"font_size": 16,
+}
