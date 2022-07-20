@@ -169,13 +169,11 @@
 			"buffers":
 			[
 				{
-					"contents": "#include<bits/stdc++.h>\nusing namespace std;\n\nint main(){\n\n\tcout<<\"just\"<<endl;\n\treturn 0;\n}sdf",
 					"file": "/home/prakash/Source/DSA-archive/Tree series/test.cpp",
-					"file_size": 92,
-					"file_write_time": 133028162400193109,
 					"settings":
 					{
-						"buffer_size": 95,
+						"buffer_size": 92,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					},
 					"undo_stack":
@@ -209,6 +207,66 @@
 							},
 							"AQAAAF4AAAAAAAAAXwAAAAAAAAAAAAAA",
 							"AQAAAAAAAAABAAAAXgAAAAAAAABeAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							22,
+							1,
+							"insert",
+							{
+								"characters": "a"
+							},
+							"AQAAAF8AAAAAAAAAYAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAXwAAAAAAAABfAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							24,
+							1,
+							"insert",
+							{
+								"characters": "d"
+							},
+							"AQAAAGAAAAAAAAAAYQAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							26,
+							1,
+							"insert",
+							{
+								"characters": "s"
+							},
+							"AQAAAGEAAAAAAAAAYgAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAYQAAAAAAAABhAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							28,
+							1,
+							"insert",
+							{
+								"characters": "f"
+							},
+							"AQAAAGIAAAAAAAAAYwAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAYgAAAAAAAABiAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							30,
+							1,
+							"insert",
+							{
+								"characters": "f"
+							},
+							"AQAAAGMAAAAAAAAAZAAAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAYwAAAAAAAABjAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							36,
+							1,
+							"delete_word",
+							{
+								"forward": false
+							},
+							"AQAAAFwAAAAAAAAAXAAAAAAAAAAIAAAAc2RmYWRzZmY",
+							"AQAAAAAAAAABAAAAZAAAAAAAAABkAAAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				},
@@ -378,15 +436,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 95,
+								"buffer_size": 92,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										95,
-										95
+										92,
+										92
 									]
 								],
 								"settings":
@@ -492,202 +550,6 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,1,0,0,9,33,1909,1036,1920,1080,0",
-			"project": "",
-			"replace":
-			{
-				"height": 0.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_symbol":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"selected_group": 1,
-			"settings":
-			{
-			},
-			"show_minimap": true,
-			"show_open_files": false,
-			"show_tabs": true,
-			"side_bar_visible": false,
-			"side_bar_width": 150.0,
-			"status_bar_visible": true,
-			"template_settings":
-			{
-			},
-			"window_id": 1,
-			"workspace_name": ""
-		},
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-				]
-			},
-			"buffers":
-			[
-			],
-			"build_system": "",
-			"build_system_choices":
-			[
-			],
-			"build_varint": "",
-			"command_palette":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-					[
-						"Package Control: ",
-						"Package Control: Install Package"
-					],
-					[
-						"Package Control: intal",
-						"Package Control: Install Package"
-					]
-				],
-				"width": 0.0
-			},
-			"console":
-			{
-				"height": 0.0,
-				"history":
-				[
-				]
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"file_history":
-			[
-				"/home/prakash/.config/sublime-text/Packages/Default/Preferences.sublime-settings",
-				"/home/prakash/.config/sublime-text/Packages/User/Preferences.sublime-settings",
-				"/home/prakash/.bashrc"
-			],
-			"find":
-			{
-				"height": 0.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-				],
-				"reverse": false,
-				"scrollbar_highlights": true,
-				"show_context": true,
-				"use_buffer2": true,
-				"use_gitignore": true,
-				"whole_word": false,
-				"wrap": true
-			},
-			"groups":
-			[
-				{
-					"sheets":
-					[
-					]
-				},
-				{
-					"sheets":
-					[
-					]
-				}
-			],
-			"incremental_find":
-			{
-				"height": 0.0
-			},
-			"input":
-			{
-				"height": 0.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					0.5,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"output.exec":
-			{
-				"height": 198.0
-			},
-			"output.find_results":
-			{
-				"height": 0.0
-			},
-			"pinned_build_system": "",
 			"position": "0,0,0,0,0,9,33,1909,1036,1920,1080,0",
 			"project": "",
 			"replace":
@@ -735,7 +597,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 8,
+			"window_id": 1,
 			"workspace_name": ""
 		}
 	],

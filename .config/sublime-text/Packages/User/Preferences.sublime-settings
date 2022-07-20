@@ -7,4 +7,5 @@
 	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"remember_workspace":false,
 	"font_size": 16,
+	"save_on_focus_lost": true, 
 }
