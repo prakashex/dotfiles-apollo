@@ -20,7 +20,8 @@ dir="$HOME/.config/rofi/powermenu"
 
 # random colors
 styles=($(ls -p --hide="colors.rasi" $dir/styles))
-color="${styles[$(( $RANDOM % 8 ))]}"
+color="${styles[$(( $RANDOM % 1 ))]}"
+# color="/home/prakash/.config/rofi/powermenu/styles/faded.rasi"
 
 # comment this line to disable random colors
 sed -i -e "s/@import .*/@import \"$color\"/g" $dir/styles/colors.rasi
@@ -31,8 +32,8 @@ theme="${themes[$(( $RANDOM % 24 ))]}"
 
 uptime=$(uptime -p | sed -e 's/up //g')
 
-rofi_command="rofi -theme $dir/$theme"
-
+# rofi_command="rofi -theme $dir/$theme" 
+rofi_command="rofi -theme /home/prakash/.config/rofi/powermenu/card_square.rasi"
 # Options
 shutdown=""
 reboot=""
