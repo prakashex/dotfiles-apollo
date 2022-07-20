@@ -15,13 +15,13 @@
 ;   \____\___/|_____\___/|_| \_\____/ 
                                     
 [colors]
-background = #3B4252
-background-alt = #d1c4e99
-foreground = #D8DEE9
-foreground-alt = #282e3a
-primary = #ffb52a
-secondary = #e60053
-alert = #B48EAD
+background = #282a36
+background-alt = #44475a
+foreground = #f8f8f2
+foreground-alt = #ff79c6
+primary = #6272a4
+secondary = #ffb86c
+alert = #ff5555
 
 ;cyan = #a3be8c 
 ;aqua = #88c0d0 
@@ -44,7 +44,7 @@ yellow = #d9bb80
 green = #a7c080
 orange = #E39B75
 magenta = #d3a0bc
-white = #d8caac
+white = #d8caac // this seems a good combination
 pink = #C394B4
 blue = #89beba
 black = #3c474d
@@ -87,7 +87,7 @@ modules-right = temperature battery cpu memory volume date shutdown
 
 tray-position = right
 tray-padding = 5
-tray-background = ${colors.black}
+tray-background = ${colors.background}
 tray-maxsize = 26
 tray-detached = false
 
@@ -479,8 +479,8 @@ click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL 
 [module/windowtitle]
 type = internal/xwindow
 format = <label>
-format-background = ${colors.black}
-format-foreground = ${colors.blue}
+format-background = ${colors.background}
+format-foreground = ${colors.primary}
 format-padding = 1
 label = "  %title%"
 label-maxlen = 50
@@ -497,8 +497,8 @@ ramp-volume-1 ="   墳"
 ramp-volume-1-font = 1
 ramp-volume-2 ="   墳"
 ramp-volume-2-font = 1
-format-volume-background = ${colors.black}
-format-volume-foreground = ${colors.cyan}
+format-volume-background = ${colors.background}
+format-volume-foreground = ${colors.yellow}
 format-volume-padding = 0.5
 
 format-muted = <label-muted>
@@ -575,7 +575,7 @@ label = "    %percentage_used%%"
 format-prefix-padding = 0.5
 format-prefix-font = 2
 format-prefix-foreground = #ffffff
-format-background = ${colors.black}
+format-background = ${colors.background}
 format-foreground = ${colors.orange}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -608,7 +608,7 @@ interval = 1
 format = <label>
 label = "    %percentage%% "
 
-format-background = ${colors.black}
+format-background = ${colors.background}
 format-foreground = ${colors.yellow}
 label-padding-right = 0
 label-padding-left = 0
@@ -691,12 +691,16 @@ date-alt = "  﨟  %A, %b %d -"
 time = "    %H:%M "
 time-alt = "%I:%M:%S %p "
 
+
+
+## colors suitable in the dracula back ground -- {colors.yellow} {colors.orange} {colors.white}
+
 ;format-prefix = ""
 format-prefix-padding = 0.5
 format-prefix-font = 1
 format-prefix-foreground = #ffffff
-format-background = ${colors.black}
-format-foreground = ${colors.white}
+format-background = ${colors.background}
+format-foreground = ${colors.yellow}
 
 label = %date% %time%
 label-padding-right = 0
