@@ -12,6 +12,9 @@ sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts 
 
 ## get mirrors -- wget https://raw.githubusercontent.com/Prakashh21/dotfiles-apollo/apollo/mirrors -O /etc/pacman.d/mirrorlist
 
+## brave-bin
+## brave --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder
+
 
 ## optional
 ## dracula gtk
@@ -57,7 +60,7 @@ sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-op
 
 # uthash is a build dependency for picom
 
-yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 dracula-gtk-theme numix-circle-icon-theme-git --noconfirm
+yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 dracula-gtk-theme tela-icon-theme --noconfirm
 
 
 ## themes
