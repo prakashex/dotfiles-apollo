@@ -1,0 +1,375 @@
+# -*- mode:org; -*-
+#+TITLE: Powerline for Polybar
+#+LANGUAGE: en
+
+#+OPTIONS: toc:2
+
+* Introduction
+
+Powerline for Polybar is a utility set of pre-configured Polybar module templates.
+
+An example being better than words, here's a quick look :
+
+[[./img/1_simple-left-to-right.png][file:img/1_simple-left-to-right.png]]
+
+[[./img/4_separated-left-to-right.png][file:img/4_separated-left-to-right.png]]
+
+Some complete example configurations :
+
+[[./img/deep-ux_bottom-bar.png][file:img/deep-ux_bottom-bar.png]]
+
+* Prerequisites and dependencies
+
+  As this utility library is dedicated to be used with Polybar, i strongly advice you to install it. From now, I will
+  assume you know the basis of Polybar configuration.
+
+* Installation
+
+  Installation is pretty straightforward: this repository is only composed of text files and Polybar configuration
+  files. You only have to clone/download/rewrite files to somewhere on your system.
+
+#+BEGIN_SRC shell
+git clone https://www.github.com/bacara/powerline-for-polybar powerline-for-polybar
+#+END_SRC
+
+  Yay!
+
+* Beginner's guide
+
+  The file [[./powerline-for-polybar.config][file:powerline-for-polybar.config]] contains pre-configured templates to be inherited by your Polybar modules
+  in order to your own build fancy Powerline setup. A good start is to include this file to your Polybar configuration
+  file :
+
+#+BEGIN_SRC ini
+; My configuration file
+
+include-file = /path/to/powerline-for-polybar/powerline-for-polybar.config
+#+END_SRC
+
+  In order to use a template for your modules, you have to make your module inherits from the template, and set a few
+  parameters. In case examples in this document aren't comprehensive enough, don't hesitate to look inside
+  [[./powerline-for-polybar.config][file:powerline-for-polybar.config]] for parameters that must be set, as they are documented along each templates. A
+  generic example would be :
+
+#+BEGIN_SRC ini
+[module/my-module]
+...
+inherit      = <powerline-something>
+<parameter1> = <background-color>
+<parameter2> = <foreground-color>
+...
+#+END_SRC
+
+#+BEGIN_QUOTE
+In this library, you will find two categories of objects to inherit from : =powerline-templates= and =powerline-modules=.
+=powerline-templates= are meant to be inherited by your own modules, which mean you have to set the template parameters
+*and* the parameters of your module (such as graphical properties, labels, formatting, ...). =powerline-modules= are
+stand-alone modules that you only have to inherit from and set their parameters.
+#+END_QUOTE
+
+  Real parameters will be explained along the following examples.
+
+** Simple Powerline bar
+
+   Let take a look back at the first example (corresponding configuration file is
+   [[./samples/1_simple-left-to-right.config][file:samples/1_simple-left-to-right.config]]):
+
+   [[./img/1_simple-left-to-right.png][file:img/1_simple-left-to-right.png]]
+
+   This bar is made out of 4 components (from left to right):
+
+   * user-defined "logo" item ("Polybar" here, but your favorite distribution's logo will work fine)
+   * CPU load monitor module
+   * RAM usage monitor module
+   * Current window title display
+
+   To build one of the first three item (those Powerline fancy things), you only need to know the background color you
+   want for this item, and the background color of the next (in line direction) item.
+
+   The template used in this example is =powerline-templates/left-to-right-item=. First, make your module inherit from the
+   template inside their configuration section.
+
+#+BEGIN_SRC ini
+inherit        = powerline-templates/left-to-right-item
+#+END_SRC
+
+   And add the needed background colors: =background= is the background for the current item, and =background-next= is the
+   background of the next item (or bar's background for the last item).
+
+#+BEGIN_SRC ini
+background      = <insert-current-item-background-color>
+background-next = <insert-next-item-background-color>
+#+END_SRC
+
+   Once this is explained and looking back at the sample, here's the code to build each of its Powerline modules:
+
+   * Logo module
+
+#+BEGIN_SRC ini
+[module/logo]
+
+; Powerline-for-Polybar settings
+inherit            = powerline-templates/left-to-right-item
+background         = ${colors.red}
+background-next    = ${colors.yellow}
+
+; Other settings
+type               = custom/text
+content-background = ${self.background}
+content-foreground = ${colors.black}
+content            = " Polybar "
+#+END_SRC
+
+   * CPU module
+
+#+BEGIN_SRC ini
+[module/cpu]
+
+; Powerline-for-Polybar settings
+inherit           = powerline-templates/left-to-right-item
+background        = ${colors.yellow}
+background-next   = ${colors.green}
+
+; Other settings
+type              = internal/cpu
+format-background = ${self.background}
+format-foreground = ${colors.black}
+label             = " CPU: %percentage%% "
+#+END_SRC
+
+   * RAM module
+
+#+BEGIN_SRC ini
+[module/memory]
+
+; Powerline-for-Polybar settings
+inherit           = powerline-templates/left-to-right-item
+background        = ${colors.green}
+background-next   = ${root.background}
+
+; Other settings
+type              = internal/memory
+format-background = ${self.background}
+format-foreground = ${colors.black}
+label             = " RAM: %percentage_used%% "
+#+END_SRC
+
+#+BEGIN_QUOTE
+Special case: as the RAM module is the last Powerline item of its line, =background-next= shall be set to the bar's
+background color (which can be easily reached using =${root.background}=).
+#+END_QUOTE
+
+And finally, add a Powerline-supporting font and modules lists in your bar configuration:
+
+#+BEGIN_SRC ini
+[bar/my-bar]
+...
+height = 20
+font-X = "Inconsolata for Powerline:pixelsize=15:antialias=true;3"
+...
+modules-left   = logo cpu memory
+modules-center = xwindow
+...
+#+END_SRC
+
+TADA! You should now have a bar looking more or less like this first sample, assuming you got your colors/fonts
+configuration right.
+
+Note that template is also available in right-to-left, using corresponding template names. For right-to-left lines,
+consider the rightmost item is the starting item while the leftmost is the ending one. The sample configuration file for
+the right-to-left equivalent of this example is [[./samples/3_simple-right-to-left.config][file:samples/3_simple-right-to-left.config]].
+
+[[./img/3_simple-right-to-left.png][file:img/3_simple-right-to-left.png]]
+
+** Separator-including Powerline bar
+
+Another, slightly more complicated example, is a Powerline bar including separators between items (corresponding
+configuration file is [[./samples/4_separated-left-to-right.config][file:samples/4_separated-left-to-right.config]]):
+
+[[./img/4_separated-left-to-right.png][file:img/4_separated-left-to-right.png]]
+
+  The template used in this example is =powerline-templates/left-to-right-item-with-separator=. Expected keys are
+  =background= for the current item background, and =separator= corresponding to the separator color.
+
+  There are two subtle things with this template :
+
+  * For the first item of the line (leftmost in this case), you have to use a specific template:
+    =powerline-templates/left-to-right-starting-item-with-separator=. This template uses the same parameters as above.
+  * At the end of the line, you have to insert a small module inheriting from the standalone module
+    =powerline-modules/left-to-right-end-of-line-separator=, which only needs a =background= value.
+
+  In order to build this sample, here's the code:
+
+  * Bar settings
+
+#+BEGIN_SRC ini
+[bar/my-bar]
+...
+height = 20
+font-X = "Inconsolata for Powerline:pixelsize=15:antialias=true;3"
+...
+modules-left   = logo cpu memory end-of-line
+modules-center = xwindow
+...
+#+END_SRC
+
+  * Logo module (using the starting item template)
+
+#+BEGIN_SRC ini
+[module/logo]
+
+; Powerline settings
+inherit            = powerline-templates/left-to-right-starting-item-with-separator
+background         = ${colors.red}
+separator          = ${colors.black}
+
+; Other settings
+type               = custom/text
+content-background = ${self.background}
+content-foreground = ${colors.black}
+content            = " Polybar "
+#+END_SRC
+
+  * CPU module
+
+#+BEGIN_SRC ini
+[module/cpu]
+
+; Powerline settings
+inherit            = powerline-templates/left-to-right-item-with-separator
+background         = ${colors.yellow}
+separator          = ${colors.black}
+
+; Other settings
+type               = internal/cpu
+format-background  = ${self.background}
+format-foreground  = ${colors.black}
+label              = " CPU: %percentage%% "
+#+END_SRC
+
+  * RAM module
+
+#+BEGIN_SRC ini
+[module/memory]
+
+; Powerline settings
+inherit            = powerline-templates/left-to-right-item-with-separator
+background         = ${colors.green}
+separator          = ${colors.black}
+
+; Other settings
+type               = internal/memory
+format-background  = ${self.background}
+format-foreground  = ${colors.black}
+label              = " RAM: %percentage_used%% "
+#+END_SRC
+
+  * End-of-line separator
+
+#+BEGIN_SRC ini
+[module/end-of-line]
+
+; Powerline settings
+inherit            = powerline-modules/left-to-right-end-of-line-separator
+separator          = ${colors.black}
+#+END_SRC
+
+You should now have something like this ([[./samples/6_separated-left-to-right-noborder.config][file:samples/6_separated-left-to-right-noborder.config]]):
+
+[[./img/6_separated-left-to-right-noborder.png][file:img/6_separated-left-to-right-noborder.png]]
+
+#+BEGIN_QUOTE
+In case you forget to use the =powerline-templates/left-to-right-starting-item-with-separator= for the first module, this
+is what to expect, but might be intended ([[./samples/5_separated-left-to-right-nostarting-noborder.config][file:samples/5_separated-left-to-right-nostarting-noborder.config]]):
+
+[[./img/5_separated-left-to-right-nostarting-noborder.png][file:img/5_separated-left-to-right-nostarting-noborder.png]]
+#+END_QUOTE
+
+My opinion being that separator-including lines look far better with borders, let's add them to finish building up our
+current example :
+
+#+BEGIN_SRC ini
+[bar/my-bar]
+...
+border-left-size   = 2
+border-top-size    = 2
+border-right-size  = 2
+border-bottom-size = 2
+border-color       = #ffffff
+...
+#+END_SRC
+
+[[./img/4_separated-left-to-right.png][file:img/4_separated-left-to-right.png]]
+
+Again, right-to-left equivalent is available ([[./samples/7_separated-right-to-left.config][file:samples/7_separated-right-to-left.config]]):
+
+[[./img/7_separated-right-to-left.png][file:img/7_separated-right-to-left.png]]
+
+* Workspaces display
+
+  As of now, designing a workspaces display area in your bar requires specific settings because of two reasons : (1) no
+  prefix/suffix formatting is actually possible (2) it depends on your windows manager.
+
+  Being an exclusive user of i3, i'll only explain the needed configuration for this window manager only.
+
+** i3
+
+   For technical reasons i won't explain in here, you must include a separator between your workspaces for the best
+   visual appearance. Thus, you need to choose the colors you'll use from here (you should have the #rrggbb hexadecimal
+   format) :
+
+   * general background color, which will be the color of your separators,
+   * background and foreground color of your mode indicator,
+   * background and foreground color of focused workspace,
+   * background and foreground color of unfocused workspace,
+   * background and foreground color of visible workspace,
+   * background and foreground color of urgent workspace.
+
+  I won't explain in details how to build your own, things are pretty simple and straightforward. Just take a look at my
+  configuration, cleaned of any "non-relevant to this scenario" settings.
+
+  Chosen colors :
+   * General background color : #000000
+   * Mode indicator : #802929 (background) and #000000 (foreground)
+   * Focused workspace : #427241 (background) and #ffffff (foreground)
+   * Unfocused workspace : #303030 (background) and #999999 (foreground)
+   * Visible workspace : #4f6a5a (background) and #ffffff (foreground)
+   * Urgent workspace : #802929 (background) and #ffffff (foreground)
+
+#+BEGIN_SRC ini
+[module/workspaces]
+type            = internal/i3
+format          = "<label-state><label-mode>"
+
+label-mode-padding          = 0
+label-mode                  = "%{B#802929 F#000000}  %mode%  %{B#000000 F#802929}"
+
+label-focused-padding       = 0
+label-focused               = "%{B#427241 F#000000}%{B#427241 F#ffffff}  %name%  %{B#000000 F#427241}"
+
+label-unfocused-padding     = ${self.label-focused-padding}
+label-unfocused             = "%{B#303030 F#000000}%{B#303030 F#999999}  %name%  %{B#000000 F#303030}"
+
+label-visible-padding       = ${self.label-focused-padding}
+label-visible               = "%{B#4f6a5a F#000000}%{B#4f6a5a F#FFFFFF}  %name%  %{B#000000 F#4f6a5a}"
+
+label-urgent-padding        = ${self.label-focused-padding}
+label-urgent                = "%{B#802929 F#000000}%{B#802929 F#ffffff}  %name%  %{B#000000 F#802929}"
+#+END_SRC
+
+   And the final result (of course, to be included inside a well-configured poly-power-bar, see above). The first
+   following sample shows workspaces display only, and the second one shows workspaces display with a prepended i3 mode
+   indicator.
+
+[[./img/deep-ux_workspaces_i3.png][file:img/deep-ux_workspaces_i3.png]]
+
+[[./img/deep-ux_workspaces_mode_i3.png][file:img/deep-ux_workspaces_mode_i3.png]]
+
+* Reference sheet
+
+  *[WORK IN PROGRESS]*
+
+* Future works
+
+  * Add support for workspaces, maybe through user-redefined template. A bit conky, but we can't do best 'til
+    prefix/sufix for independant workspace is released (will it?).
