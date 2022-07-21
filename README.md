@@ -33,10 +33,8 @@ My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 
 ![2022-07-21-20:34:39-screenshot](https://user-images.githubusercontent.com/90280586/180247874-b5556e99-e0aa-411b-8381-7074ca071a6a.png)
 
-![2022-07-21_22-26](https://user-images.githubusercontent.com/90280586/180271249-595cda43-94d2-4b08-8fd5-7f6d2e937907.png)
-
-
 ![2022-07-21-205223_1920x1080_scrot](https://user-images.githubusercontent.com/90280586/180270322-e45ebdf2-bf30-406f-8815-8d3b6e7b0094.png)
 
-
 ![2022-07-21-205509_1920x1080_scrot](https://user-images.githubusercontent.com/90280586/180270356-181d4706-b752-40ea-a645-a5bf09307129.png)
+
+![2022-07-21_22-26](https://user-images.githubusercontent.com/90280586/180271249-595cda43-94d2-4b08-8fd5-7f6d2e937907.png)
