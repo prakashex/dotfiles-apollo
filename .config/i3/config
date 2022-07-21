@@ -675,7 +675,7 @@ for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratc
 exec_always --no-startup-id pgrep -f '^xfce4-terminal --title dropdown' || xfce4-terminal --title dropdown
 
 
-
+#bindsym Print exec /usr/bin/flameshot
 
 
 
