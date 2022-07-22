@@ -222,7 +222,7 @@ label-visible-padding       = ${self.label-focused-padding}
 label-visible               = "%{B#4f6a5a F#000000}%{B#4f6a5a F#FFFFFF}  %icon%  %{B#000000 F#4f6a5a}"
 
 label-urgent-padding        = ${self.label-focused-padding}
-label-urgent                = "%{B#802929 F#000000}%{B#802929 F#ffffff}  %icon%  %{B#000000 F#802929}"
+label-urgent                = "%{B#ff5555 F#282a36}%{B#ff5555 F#282a36}  %icon%  %{B#282a36 F#ff5555}"
 
 
 ; Available tokens:
