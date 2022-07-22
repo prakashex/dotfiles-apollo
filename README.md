@@ -16,7 +16,7 @@ My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 - filemanager - nemo 
 - gtk-theme - [dracula](https://draculatheme.com)
 - font - nerdfont , inconsolata for powerline
-- compositor - [picom](https://github.com/pijulius/picom) (fork of picom by pijulius to enable sick animations)
+- compositor - [picom](https://github.com/pijulius/picom) (fork of picom by pijulius to enable smooth transitions)
 - menu - rofi
 - browser - [firefox-nightly](https://www.mozilla.org/en-US/firefox/channel/desktop/)
 - editor - sublime , vsCode
@@ -39,3 +39,7 @@ My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 
 ![2022-07-22-142226_1920x1080_scrot](https://user-images.githubusercontent.com/90280586/180404240-3e34fabc-9353-4cf3-b68d-ab2854ecf927.png)
 
+
+![2022-07-23-00:20:19-screenshot](https://user-images.githubusercontent.com/90280586/180505195-33574408-6b80-4c9b-83fb-2560d5e20b21.png)
+
+![2022-07-23-00:22:03-screenshot](https://user-images.githubusercontent.com/90280586/180505203-9a56357d-da57-4e10-8961-316c5e64e2ea.png)
