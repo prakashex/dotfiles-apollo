@@ -359,8 +359,8 @@ format-volume-foreground = ${colors.background}
 format-volume-padding-right = 1
 
 format-muted = <label-muted>
-format-muted-background = ${colors.background} 	
-format-muted-foreground = ${colors.orange}
+format-muted-background = ${colors.orange} 	
+format-muted-foreground = ${colors.background}
 label-muted ="婢 "
 format-muted-font = 2
 
