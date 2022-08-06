@@ -1,4 +1,5 @@
 export TERMINAL=xfce4-terminal
+export BROWSER=firefox-nightly
 #export MOZ_DISABLE_RDD_SANDBOX=1
 export LIBVA_DRIVER_NAME=i965
 # export MOZ_X11_EGL=1

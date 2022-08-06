@@ -56,11 +56,11 @@ sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts 
 ##    media.ffmpeg.vaapi.enabled  = true
 ##    media.rdd-vpx.enabled = true
 
-sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python meson uthash 
+sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python docker docker-compose meson uthash 
 
 # uthash is a build dependency for picom
 
-yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 dracula-gtk-theme tela-icon-theme --noconfirm
+yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 dracula-gtk-theme tela-icon-theme ferdium-bin --noconfirm
 
 
 ## themes
@@ -75,14 +75,24 @@ wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
 sudo unzip Dracula.zip -d /usr/share/icons
 
 
+
+
+
 ## fonts
+
+# fonts for polybar
+sudo pacman -Sy ttc-iosevka
+yay -Sy nerd-fonts-source-code-pro otf-inconsolata-powerline-git --noconfirm
+
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/FiraCode.zip
 sudo unzip FiraCode.zip -d /usr/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 sudo unzip Meslo.zip -d /usr/share/fonts
-wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
-sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
-fc-cache -vf
+
+## removed these fonts in favor of those installed above
+#wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
+#sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
+#fc-cache -vf
 
 
 ######################################################################################################
@@ -130,7 +140,7 @@ gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 ## firefox -- https://github.com/mut-ex/minimal-functional-fox
 
 
-rm -Rf ~/.bashrc ~/.Xresources ~/.bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/polybar ~/.config/picom ~/add-dots.sh ~/.config/kitty ~/.config/rofi ~/.zshrc ~/.zprofile ~/packages.txt ~/setup.sh ~/.Xnord ~/.config/nitrogen/ ~/.config/neofetch
+rm -Rf ~/.bashrc ~/.Xresources ~/.bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/polybar ~/.config/picom ~/add-dots.sh ~/.config/kitty ~/.config/rofi ~/.zshrc ~/.zprofile ~/packages.txt ~/setup.sh ~/.Xnord ~/.config/nitrogen/ ~/.config/neofetch ~/.profile   
 
 echo "dotfiles" >> .gitignore
 
