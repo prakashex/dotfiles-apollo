@@ -60,7 +60,7 @@ sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-op
 
 # uthash is a build dependency for picom
 
-yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome sublime-text-4 dracula-gtk-theme tela-icon-theme ferdium-bin --noconfirm
+yay -Sy freedownloadmanager lens-bin zoom visual-studio-code-bin google-chrome firefox-nightly-bin sublime-text-4 dracula-gtk-theme tela-icon-theme ferdium-bin --noconfirm
 
 
 ## themes
