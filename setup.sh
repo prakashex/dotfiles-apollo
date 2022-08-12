@@ -206,7 +206,7 @@ exit 0
 ##  -- incognito -----> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder --incognito
 
 
-
+## enable --> WebGL Developer Extensions and WebGL Draft Extensions
 
 ## install zsh and oh-my-zsh
 
