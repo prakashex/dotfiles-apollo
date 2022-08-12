@@ -199,12 +199,11 @@ exit 0
 
 
 
+## enable vaapi in chrome based browsers
 
-
-
-# ## fonts archive
-
-# ## use wget to download https://github.com/Prakashh21/Fonts/archive/refs/tags/v1.0.zip
+## Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder %U
+##  -- new windows ---> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder
+##  -- incognito -----> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder --incognito
 
 
 
