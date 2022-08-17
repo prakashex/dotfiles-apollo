@@ -8,5 +8,5 @@ export LIBVA_DRIVER_NAME=iHD
 
 # commented the below line becasue , it doesn't seems to make any difference infact not having it improved the decoding perfromance.
 #export MOZ_LOG="PlatformDecoderModule:5"
-#export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
 #export QT_QPA_PLATFORMTHEME=qt6ct
