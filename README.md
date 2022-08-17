@@ -2,7 +2,7 @@
 My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 
 
-![2022-07-21-20:35:11-screenshot](https://user-images.githubusercontent.com/90280586/180247747-7d50c6a7-24ca-4831-aeb4-416a433147fb.png)
+![2022-08-17-22:15:39-screenshot](https://user-images.githubusercontent.com/90280586/185196716-1993253f-8fdd-4fec-ba9a-234c2868a6a4.png)
 
 
 ##### Background : These dotfiles are optimized for max keyboard use , i.e. to avoid using mouse , hence I am not Using any DE (Desktop Environment) , rather I am using a wm. 
@@ -31,7 +31,7 @@ My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 
 ## Screenshots
 
-![2022-07-21-20:34:39-screenshot](https://user-images.githubusercontent.com/90280586/180247874-b5556e99-e0aa-411b-8381-7074ca071a6a.png)
+![2022-08-17-22:24:51-screenshot](https://user-images.githubusercontent.com/90280586/185198314-db1a6696-b51a-4887-ae53-fcfb2e282f60.png)
 
 ![2022-07-21-205223_1920x1080_scrot](https://user-images.githubusercontent.com/90280586/180270322-e45ebdf2-bf30-406f-8815-8d3b6e7b0094.png)
 

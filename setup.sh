@@ -4,7 +4,7 @@ shopt -s expand_aliases
 
 sudo pacman -Syu
 
-sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts neofetch ttf-fira-code htop btop rofi telegram-desktop alacritty xfce4-taskmanager element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo nemo-fileroller intel-media-driver intel-gpu-tools libva-intel-driver libva ffmpeg libva-utils libarchive xpdf 
+sudo pacman -Sy ttf-font-awesome qt5ct papirus-icon-theme noto-fonts-emoji noto-fonts neofetch ttf-fira-code htop btop rofi telegram-desktop alacritty xfce4-taskmanager element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo nemo-fileroller intel-media-driver intel-gpu-tools libva-intel-driver libva ffmpeg libva-utils libarchive xpdf 
 -installer-dkms 
 
 
@@ -13,8 +13,6 @@ sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts 
 ## get mirrors -- curl https://files.snehit.dev/pacman-mirrorlist-in > /tmp/pacman-mirrors-in && cat /tmp/pacman-mirrors-in /etc/pacman.d/mirrorlist | sudo tee /etc/pacman.d/mirrorlist
 
 
-## brave-bin
-## brave --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder
 
 
 ## optional
@@ -91,9 +89,9 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 sudo unzip Meslo.zip -d /usr/share/fonts
 
 ## removed these fonts in favor of those installed above
-#wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
-#sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
-#fc-cache -vf
+wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v5.0.zip
+sudo bsdtar --strip-components=1 -xvf v5.0.zip -C /usr/share/fonts/
+fc-cache -vf
 
 
 ######################################################################################################
@@ -202,9 +200,9 @@ exit 0
 
 ## enable vaapi in chrome based browsers
 
-## Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder %U
-##  -- new windows ---> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder
-##  -- incognito -----> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder --incognito
+## Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder %U
+##  -- new windows ---> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder
+##  -- incognito -----> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder --incognito
 
 
 ## enable --> WebGL Developer Extensions and WebGL Draft Extensions
