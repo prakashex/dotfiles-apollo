@@ -13,8 +13,6 @@ sudo pacman -Sy ttf-font-awesome papirus-icon-theme noto-fonts-emoji noto-fonts 
 ## get mirrors -- curl https://files.snehit.dev/pacman-mirrorlist-in > /tmp/pacman-mirrors-in && cat /tmp/pacman-mirrors-in /etc/pacman.d/mirrorlist | sudo tee /etc/pacman.d/mirrorlist
 
 
-## brave-bin
-## brave --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder
 
 
 ## optional
