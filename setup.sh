@@ -202,9 +202,9 @@ exit 0
 
 ## enable vaapi in chrome based browsers
 
-## Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder %U
-##  -- new windows ---> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder
-##  -- incognito -----> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=egl --disable-features=UseChromeOSDirectVideoDecoder --incognito
+## Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder %U
+##  -- new windows ---> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder
+##  -- incognito -----> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder --incognito
 
 
 ## enable --> WebGL Developer Extensions and WebGL Draft Extensions
