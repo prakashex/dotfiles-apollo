@@ -31,7 +31,7 @@ My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 
 ## Screenshots
 
-![2022-07-21-20:34:39-screenshot](https://user-images.githubusercontent.com/90280586/180247874-b5556e99-e0aa-411b-8381-7074ca071a6a.png)
+![2022-08-17-22:24:51-screenshot](https://user-images.githubusercontent.com/90280586/185198314-db1a6696-b51a-4887-ae53-fcfb2e282f60.png)
 
 ![2022-07-21-205223_1920x1080_scrot](https://user-images.githubusercontent.com/90280586/180270322-e45ebdf2-bf30-406f-8815-8d3b6e7b0094.png)
 
