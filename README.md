@@ -2,7 +2,7 @@
 My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 
 
-![2022-07-21-20:35:11-screenshot](https://user-images.githubusercontent.com/90280586/180247747-7d50c6a7-24ca-4831-aeb4-416a433147fb.png)
+![2022-08-17-22:15:39-screenshot](https://user-images.githubusercontent.com/90280586/185196716-1993253f-8fdd-4fec-ba9a-234c2868a6a4.png)
 
 
 ##### Background : These dotfiles are optimized for max keyboard use , i.e. to avoid using mouse , hence I am not Using any DE (Desktop Environment) , rather I am using a wm. 
