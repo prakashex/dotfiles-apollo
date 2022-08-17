@@ -92,7 +92,7 @@ background-next   = ${colors.green}
 type              = internal/cpu
 format-background = ${colors.background}
 format-foreground = ${colors.orange}
-label = " %percentage%% "
+label = "  %percentage%% "
 
 [module/memory]
 ; Powerline settings
@@ -103,7 +103,7 @@ background-next   = ${root.background}
 type              = internal/memory
 format-background = ${colors.yellow}
 format-foreground = ${colors.background}
-label = " %percentage_used%% "
+label = "  %percentage_used%% "
 
 
 [module/i3]
