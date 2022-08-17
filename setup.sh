@@ -91,9 +91,9 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 sudo unzip Meslo.zip -d /usr/share/fonts
 
 ## removed these fonts in favor of those installed above
-#wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
-#sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
-#fc-cache -vf
+wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v5.0.zip
+sudo bsdtar --strip-components=1 -xvf v5.0.zip -C /usr/share/fonts/
+fc-cache -vf
 
 
 ######################################################################################################
