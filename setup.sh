@@ -216,7 +216,8 @@ exit 0
 ##  -- incognito -----> Exec=/usr/bin/google-chrome-stable --enable-features=VaapiVideoDecoder --use-gl=desktop --disable-features=UseChromeOSDirectVideoDecoder --incognito
 
 
-## enable --> WebGL Developer Extensions and WebGL Draft Extensions
+## enable --> WebGL Developer Extensions and WebGL Draft Extensions 
+## enable --> gpu rasterization
 
 ## install zsh and oh-my-zsh
 
