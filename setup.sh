@@ -2,10 +2,10 @@
 shopt -s expand_aliases
 
 
-sudo pacman -Syu
+#sudo pacman -Syu
 
-sudo pacman -Sy ttf-font-awesome qt5ct papirus-icon-theme noto-fonts-emoji noto-fonts neofetch ttf-fira-code htop btop rofi telegram-desktop alacritty xfce4-taskmanager element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo nemo-fileroller intel-media-driver intel-gpu-tools libva-intel-driver libva ffmpeg libva-utils libarchive xpdf 
--installer-dkms 
+#sudo pacman -Sy ttf-font-awesome qt5ct papirus-icon-theme noto-fonts-emoji noto-fonts neofetch ttf-fira-code htop btop rofi telegram-desktop alacritty xfce4-taskmanager element-desktop obs-studio gparted flameshot deluge-gtk git nitrogen vim github-cli p7zip polybar nemo nemo-fileroller intel-media-driver intel-gpu-tools libva-intel-driver libva ffmpeg libva-utils libarchive xpdf 
+#-installer-dkms 
 
 
 
@@ -55,7 +55,7 @@ sudo pacman -Sy ttf-font-awesome qt5ct papirus-icon-theme noto-fonts-emoji noto-
 ##    media.ffmpeg.vaapi.enabled  = true
 ##    media.rdd-vpx.enabled = true
 
-sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python docker docker-compose meson uthash 
+#sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-openjdk nodejs npm python docker docker-compose meson uthash 
 
 # uthash is a build dependency for picom
 
@@ -70,7 +70,7 @@ sudo pacman -Sy pycharm-community-edition intellij-idea-community-edition jdk-op
 
 # lens-bin removed
 # tela icon theme removed
-yay -Sy freedownloadmanager spotify-adblock zoom visual-studio-code-bin google-chrome firefox-nightly-bin sublime-text-4 dracula-gtk-theme ferdium-bin --noconfirm
+#yay -Sy freedownloadmanager spotify-adblock zoom visual-studio-code-bin google-chrome firefox-nightly-bin sublime-text-4 dracula-gtk-theme ferdium-bin --noconfirm
 
 
 ## themes
@@ -100,8 +100,8 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v1.1.0/Meslo.zip
 sudo unzip Meslo.zip -d /usr/share/fonts
 
 ## removed these fonts in favor of those installed above
-wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v5.0.zip
-sudo bsdtar --strip-components=1 -xvf v5.0.zip -C /usr/share/fonts/
+wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
+sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
 fc-cache -vf
 
 
@@ -115,7 +115,7 @@ wget https://raw.githubusercontent.com/mhsattarian/nemo-open-in-vscode/master/vs
 
 ## setting default terminal as kitty for nemo
 
-gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
+#gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 
 ## if this doesn't work try this
 ## gsettings set org.gnome.desktop.default-applications.terminal exec kitty
