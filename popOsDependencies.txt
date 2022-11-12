@@ -20,7 +20,7 @@ sudo apt remove regolith-i3-workspace-config
 
 ## install polybar rofi nitrogen lxappearance acpi
 
-sudo apt install polybar rofi nitrogen lxappearance libarchive-tools
+sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks
 
 
 ## run config.sh 
