@@ -1,3 +1,6 @@
+#!/bin/bash
+shopt -s expand_aliases
+
 ## install regolith
 
 wget -qO - https://regolith-desktop.org/regolith.key | \
@@ -12,6 +15,8 @@ sudo apt update
 sudo apt install regolith-desktop
 sudo apt upgrade
 
+## restart
+
 
 
 ## remove regolith config
@@ -22,6 +27,12 @@ sudo apt remove regolith-i3-workspace-config
 
 sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks
 
+
+## install fonts
+
+wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
+sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
+fc-cache -vf
 
 ## run config.sh 
 
