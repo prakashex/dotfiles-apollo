@@ -19,10 +19,6 @@ sudo apt upgrade
 
 
 
-## remove regolith config
-
-sudo apt remove regolith-i3-workspace-config
-
 ## install polybar rofi nitrogen lxappearance acpi
 
 sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks
@@ -34,7 +30,12 @@ wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
 sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
 fc-cache -vf
 
-## run config.sh 
+## install dracula icons
+
+cd ~
+wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
+sudo unzip Dracula.zip -d /usr/share/icons
+
 
 
 # install picom build dependencies
@@ -44,3 +45,30 @@ sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev l
 # install picom build tools
 
 sudo apt-get install meson ninja-build
+
+
+
+
+
+## remove regolith config
+
+sudo apt remove regolith-i3-workspace-config
+
+
+## pull config
+
+rm -Rf ~/.bashrc ~/.Xresources ~/.bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2.0 ~/.config/xfce4/ ~/.config/i3/ ~/.config/polybar ~/.config/picom ~/add-dots.sh ~/.config/kitty ~/.config/rofi ~/.zshrc ~/.zprofile ~/packages.txt ~/setup.sh ~/.Xnord ~/.config/nitrogen/ ~/.config/neofetch ~/.profile   
+
+echo "dotfiles" >> .gitignore
+
+git clone --bare https://github.com/Prakashh21/dotfiles-apollo.git $HOME/dotfiles
+
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+config checkout 
+config config status.showUntrackedFiles no
+
+git config --global user.email "prakashope@gmail.com"
+git config --global user.name "Prakash"
+
+exit 0
