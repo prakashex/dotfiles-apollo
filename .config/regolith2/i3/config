@@ -668,6 +668,16 @@ bindsym $mod+m scratchpad show; move position center
 for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 4,resize set 1025 600 
 
 
+exec_always --no-startup-id nautilus --name testing
+for_window [instance="testing"] move scratchpad
+
+bindsym $mod+x [class="Org.gnome.Nautilus"] scratchpad show; move position center
+
+
+#bindsym Print exec /usr/bin/flameshot
+
+exec_always --no-startup-id nm-applet 
+
 #exec_always --no-startup-id xfce4-terminal -T dropdown & // -T or --title both flags are the same used to give title to the window.
 
 
