@@ -37,8 +37,8 @@ wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
 sudo unzip Dracula.zip -d /usr/share/icons
 
 wget https://github.com/dracula/gtk/archive/master.zip
-mv master.zip dracula.zip
-sudo unzip dracula.zip -d /usr/share/icons
+sudo unzip master.zip -d /usr/share/icons
+sudo mv /usr/share/themes/gtk-master/ /usr/share/themes/dracula
 
 
 # install picom build dependencies
