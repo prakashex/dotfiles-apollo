@@ -10,7 +10,7 @@ My personal Dotfiles Repo ... feel free to use whatever suites your setup.
 
 #### Applications
 
-- distro - EndeavourOS (Arch Derivative)
+- distro - EndeavourOS (Arch Derivative) / POP OS (Ubuntu Derivative) -- for pop OS config change branch from apollo to popOs
 - wm - i3
 - bar - polybar
 - filemanager - nemo 
