@@ -21,8 +21,14 @@ sudo apt upgrade
 
 ## install polybar rofi nitrogen lxappearance acpi
 
-sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks
+sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free
 
+
+## installing firefox nightly
+
+sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa
+sudo apt update
+sudo apt install firefox-trunk
 
 ## install fonts
 
