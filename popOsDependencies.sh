@@ -24,11 +24,24 @@ sudo apt upgrade
 sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free
 
 
-## installing firefox nightly
+## installing firefox nightly and brave
 
 sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa
 sudo apt update
 sudo apt install firefox-trunk
+
+sudo apt install apt-transport-https curl
+
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser
+
+
+
 
 ## install fonts
 
