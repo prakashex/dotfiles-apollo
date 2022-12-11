@@ -671,6 +671,10 @@ for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratc
 exec_always --no-startup-id nautilus --name testing
 for_window [instance="testing"] move scratchpad
 
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus [class="Google-chrome"] scratchpad show
+
+
 bindsym $mod+x [class="Org.gnome.Nautilus"] scratchpad show; move position center
 
 
