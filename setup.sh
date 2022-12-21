@@ -217,7 +217,7 @@ exit 0
 
 
 ## enable --> WebGL Developer Extensions and WebGL Draft Extensions 
-## enable --> gpu rasterization
+## enable --> gpu rasterization override software rendering list
 
 ## install zsh and oh-my-zsh
 
