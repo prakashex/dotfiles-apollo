@@ -8,6 +8,9 @@ sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev l
 
 sudo apt-get install meson ninja-build
 
+
+# Clone and Compile from source
+
 mkdir -p ~/source
 cd ~/source
 
