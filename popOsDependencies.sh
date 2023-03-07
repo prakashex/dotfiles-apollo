@@ -56,7 +56,7 @@ wget https://github.com/dracula/gtk/files/5214870/Dracula.zip
 sudo unzip Dracula.zip -d /usr/share/icons
 
 wget https://github.com/dracula/gtk/archive/master.zip
-sudo unzip master.zip -d /usr/share/icons
+sudo unzip master.zip -d /usr/share/themes
 sudo mv /usr/share/themes/gtk-master/ /usr/share/themes/dracula
 
 
