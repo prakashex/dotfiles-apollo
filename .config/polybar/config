@@ -371,7 +371,7 @@ background        = ${colors.green}
 background-next   = ${colors.background}
 ; Other settings
 type = internal/network
-interface = wlo1
+interface = enp3s0
 interval = 1.0
 label-connected = " %downspeed%  %upspeed% "
 label-disconnected =" disconnected "
