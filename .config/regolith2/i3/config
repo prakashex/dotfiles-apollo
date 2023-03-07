@@ -66,6 +66,12 @@ gaps outer 3
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# switch to recent workspace
+
+bindsym $mod+Tab workspace back_and_forth
+
+
+
 # switch to workspace
 bindsym $mod+1    workspace  $ws1
 bindsym $mod+2    workspace  $ws2
@@ -367,7 +373,7 @@ exec_always --no-startup-id picom --experimental-backends -b
 
 ## previous working config
 
-#exec_always --no-startup-id picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 & 
+#exec_always --no-startup-id picom -b --animations --animation-window-mass 0.5 --animation-for-open-window zoom --animation-stiffness 350 &
 
 #exec_always --no-startup-id killall picom && picom -b
 #exec_always --no-startup-id picom --config ~/.config/picom.conf
@@ -388,7 +394,7 @@ exec_always --no-startup-id picom --experimental-backends -b
 exec --no-startup-id dex --autostart --environment i3
 
 # start welcome app
-#exec --no-startup-id sh /usr/share/endeavouros/scripts/welcome --startdelay=3 
+#exec --no-startup-id sh /usr/share/endeavouros/scripts/welcome --startdelay=3
 
 # num lock activated
 #exec --no-startup-id numlockx on
@@ -478,7 +484,7 @@ for_window [class="^.*"] border pixel 1
 
 # set size of floating window
 #for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
-#for_window [class=".*"] resize set 640 480 #to change size of all floating windows 
+#for_window [class=".*"] resize set 640 480 #to change size of all floating windows
 
 # set position of floating window
 #for_window [class=".*"] move position center
@@ -632,7 +638,7 @@ exec_always --no-startup-id ~/.config/polybar/scripts/launch-polybar.sh &
 #exec_always --no-startup-id pgrep -f '^alacritty --class fm,fm' || alacritty --class fm,fm -e ranger
 
 
-#bindsym $mod+Control+Return exec xfce4-terminal --title dropdown 
+#bindsym $mod+Control+Return exec xfce4-terminal --title dropdown
 #& exec st -n scratch -e ncmpcpp & exec kitty --name ranger -e ranger
 #bindsym $mod+m [instance="dropdown"] scratchpad show; move position center
 
@@ -664,27 +670,30 @@ exec_always --no-startup-id ~/.config/polybar/scripts/launch-polybar.sh &
 #bindsym $mod+Shift+minus move scratchpad
 #bindsym $mod+minus scratchpad show
 
-#no need for this invoking as exec_always below 
+#no need for this invoking as exec_always below
 #bindsym $mod+shift+t exec xfce4-terminal -T dropdown
 
 
 bindsym $mod+m scratchpad show; move position center
-for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 4,resize set 1025 600 
+for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 4,resize set 1025 600
 
 
-exec_always --no-startup-id nautilus --name testing
-for_window [instance="testing"] move scratchpad
-
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus [class="Google-chrome"] scratchpad show
+#exec_always --no-startup-id nautilus --name testing
+#for_window [instance="testing"] move scratchpad
 
 
-bindsym $mod+x [class="Org.gnome.Nautilus"] scratchpad show; move position center
+## below code moves any window to scratchpad and that is visible using $mod + m , in order incase other app is also in the scratchpad
+#bindsym $mod+Shift+minus move scratchpad
+
+#bindsym $mod+minus [class="Google-chrome"] scratchpad show
+
+
+#bindsym $mod+x [class="Org.gnome.Nautilus"] scratchpad show; move position center
 
 
 #bindsym Print exec /usr/bin/flameshot
 
-exec_always --no-startup-id nm-applet 
+exec_always --no-startup-id nm-applet
 
 #exec_always --no-startup-id xfce4-terminal -T dropdown & // -T or --title both flags are the same used to give title to the window.
 
