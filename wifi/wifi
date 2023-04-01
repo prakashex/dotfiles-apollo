@@ -1,0 +1,9 @@
+copy 01-netcfg.yaml to /etc/netplan
+
+after that 
+
+sudo su -
+netplan apply
+service network-manager restart
+
+https://gist.github.com/stemy72/9d92c729382cf1fdc593c5004534c082
