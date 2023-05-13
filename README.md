@@ -28,4 +28,4 @@ This Repository contains my personal Dotfiles , Feel free to use any config whic
 
 ## ScreenShots
 
-![2023-05-10_23-57](https://github.com/Prakashh21/dotfiles-apollo/assets/90280586/f256de4c-a984-4cd4-9b2d-23f91932ed61)
+![image](https://github.com/Prakashh21/dotfiles-apollo/assets/90280586/7f822012-af77-43c4-ae93-fa8dcbaa5c74)
