@@ -29,3 +29,13 @@ This Repository contains my personal Dotfiles , Feel free to use any config whic
 ## ScreenShots
 
 ![image](https://github.com/Prakashh21/dotfiles-apollo/assets/90280586/7f822012-af77-43c4-ae93-fa8dcbaa5c74)
+
+
+#### Task list (to be implemented)
+
+- [ ] Create a nemo scratchpad.
+- [ ] add web search to rofi , or better would be add chatGPT or any ai assitant to rofi.
+- [ ] write custom rofi config.
+- [ ] lockscreen.
+
+
