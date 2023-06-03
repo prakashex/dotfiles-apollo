@@ -11,7 +11,7 @@ This Repository contains my personal Dotfiles , Feel free to use any config whic
 ##### Background : The goal is to keep my hands on the keyboad as much as I can , and reduce the time spent on moving your hands between the keyboad and mouse , for that purpose I am using a window manager instead of a Desktop environment   
 
 ##### Configs for different distros are available in different branches with the distro names , as long as you use arch and debian based distros you should be fine , to replicate my setup.
-
+##### setup.sh contains an automation script , for the entire setup , please make the required changes before running it on your machine , and picom-install.sh contains the script for installing the dependencies and installing the pijulius's picom fork. 
 #### Applications
 
 - wm - i3
