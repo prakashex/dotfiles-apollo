@@ -89,7 +89,7 @@ rm -Rf ~/.bashrc ~/.Xresources ~/.bash_profile ~/.config/gtk-3.0 ~/.config/gtk-2
 
 echo "dotfiles" >> .gitignore
 
-git clone --bare https://github.com/Prakashh21/dotfiles-apollo.git $HOME/dotfiles
+git clone --bare https://github.com/prakashex/dotfiles-apollo.git $HOME/dotfiles
 
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
