@@ -49,6 +49,7 @@ workspace_layout default
 
 #border indicator on windows:
 new_window pixel 1
+for_window [class="^.*"] border pixel 2
 
 # thin borders
 # hide_edge_borders both
@@ -63,14 +64,10 @@ gaps outer 3
 # window title alignment
 #title_align center
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
-# switch to recent workspace
-
 bindsym $mod+Tab workspace back_and_forth
 
-
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
 
 # switch to workspace
 bindsym $mod+1    workspace  $ws1
@@ -189,7 +186,7 @@ bindsym $mod+Shift+s exec ~/web-search.sh -s google -b firefox
 # lock with a picture:
 #bindsym $mod+l exec i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
 # lock by blurring the screen:
-bindsym $mod+l exec ~/.config/i3/scripts/blur-lock
+#bindsym $mod+l exec ~/.config/i3/scripts/blur-lock
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -211,7 +208,7 @@ bindsym F1 exec ~/.config/i3/scripts/keyhint-2
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+b focus up
-bindsym $mod+o focus right
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -478,10 +475,6 @@ for_window [window_role="About"] floating enable
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
 
-hide_edge_borders both
-for_window [class="^.*"] border pixel 1
-
-
 # set size of floating window
 #for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
 #for_window [class=".*"] resize set 640 480 #to change size of all floating windows
@@ -681,14 +674,11 @@ for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratc
 #exec_always --no-startup-id nautilus --name testing
 #for_window [instance="testing"] move scratchpad
 
-
-## below code moves any window to scratchpad and that is visible using $mod + m , in order incase other app is also in the scratchpad
-#bindsym $mod+Shift+minus move scratchpad
-
-#bindsym $mod+minus [class="Google-chrome"] scratchpad show
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus [class="Google-chrome"] scratchpad show
 
 
-#bindsym $mod+x [class="Org.gnome.Nautilus"] scratchpad show; move position center
+bindsym $mod+x [class="Org.gnome.Nautilus"] scratchpad show; move position center
 
 
 #bindsym Print exec /usr/bin/flameshot
@@ -717,10 +707,10 @@ exec_always --no-startup-id pgrep -f '^xfce4-terminal --title dropdown' || xfce4
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 
-#bindsym $mod+d exec rofi -no-lazy-grab -show drun -modi drun \
-#		-config $HOME/.config/rofi/launchers/colorful/style_5.rasi
+bindsym $mod+d exec rofi -no-lazy-grab -show drun -modi drun \
+		-config $HOME/.config/rofi/config.rasi
 
-bindsym $mod+d exec ~/.config/rofi/launchers/ribbon/launcher.sh
+#bindsym $mod+d exec ~/.config/rofi/launchers/ribbon/launcher.sh
 
 #bindsym F9 exec rofi -modi drun -show drun \
 #		-config ~/.config/rofi/rofidmenu.rasi
