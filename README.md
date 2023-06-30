@@ -37,5 +37,6 @@ This Repository contains my personal Dotfiles , Feel free to use any config whic
 - [ ] add web search to rofi , or better would be add chatGPT or any ai assitant to rofi.
 - [ ] write custom rofi config.
 - [ ] lockscreen.
+- [ ] run picom install script from inside setup.sh
 
 
