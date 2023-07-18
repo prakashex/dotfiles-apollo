@@ -34,9 +34,10 @@ This Repository contains my personal Dotfiles , Feel free to use any config whic
 #### Task list (to be implemented)
 
 - [ ] Create a nemo scratchpad.
-- [ ] add web search to rofi , or better would be add chatGPT or any ai assitant to rofi.
-- [ ] write custom rofi config.
-- [ ] lockscreen.
-- [ ] run picom install script from inside setup.sh
+- [ ] Add web search to rofi , or better would be add chatGPT or any ai assitant to rofi.
+- [ ] Write custom rofi config.
+- [ ] Lockscreen.
+- [ ] Run picom install script from inside setup.sh
+- [ ] Add file Search to Rofi
 
 
