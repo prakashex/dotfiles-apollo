@@ -21,7 +21,7 @@ sudo apt upgrade
 
 ## install polybar rofi nitrogen lxappearance acpi
 
-sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free gnome-control-center regolith-i3-workspace-config
+sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free  regolith-i3-workspace-config
 
 
 ## installing firefox nightly and brave
@@ -98,5 +98,8 @@ config config status.showUntrackedFiles no
 
 git config --global user.email "prakashope@gmail.com"
 git config --global user.name "Prakash"
+
+yes Y | ~/./picom-install.sh
+
 
 exit 0
