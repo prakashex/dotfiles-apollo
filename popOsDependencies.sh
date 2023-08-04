@@ -99,7 +99,20 @@ config config status.showUntrackedFiles no
 git config --global user.email "prakashope@gmail.com"
 git config --global user.name "Prakash"
 
-yes Y | ~/./picom-install.sh
+# docker install docs
+
+
+# docker engine
+# https://docs.docker.com/engine/install/ubuntu/
+
+# # docker compose standalone 
+
+# Link -- https://docs.docker.com/compose/install/standalone/
+# # after installing docker componse standalone 
+# sudo usermod -aG docker $USER                  # to add myself to docker group
+# sudo chgrp docker /usr/local/bin/docker-compose     # to give docker-compose to docker group,
+# sudo chmod 750 /usr/local/bin/docker-compose   # to allow docker group users to execute it
+
 
 
 exit 0
