@@ -1,5 +1,5 @@
 export TERMINAL=xfce4-terminal
-export BROWSER=firefox-nightly
+#export BROWSER=firefox-nightly
 #export MOZ_DISABLE_RDD_SANDBOX=1
 ## i965 can also work.. but iHD is working best as of now
 export LIBVA_DRIVER_NAME=iHD
