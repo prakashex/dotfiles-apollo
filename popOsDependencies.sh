@@ -113,6 +113,11 @@ git config --global user.name "Prakash"
 # sudo chgrp docker /usr/local/bin/docker-compose     # to give docker-compose to docker group,
 # sudo chmod 750 /usr/local/bin/docker-compose   # to allow docker group users to execute it
 
+## automatic install script 
+
+## yes Y | command-that-asks-for-input
+
+
 
 
 exit 0
