@@ -115,10 +115,9 @@ git config --global user.name "Prakash"
 
 # install vscode context menu extension for nautilus 
 
-wget -qO- https://raw.githubusercontent.com/cra0zy/code-nautilus/master/install.sh | bash
+# wget -qO- https://raw.githubusercontent.com/cra0zy/code-nautilus/master/install.sh | bash
 
 # docker install docs
-
 
 # docker engine
 # https://docs.docker.com/engine/install/ubuntu/
@@ -135,7 +134,7 @@ wget -qO- https://raw.githubusercontent.com/cra0zy/code-nautilus/master/install.
 
 ## yes Y | command-that-asks-for-input
 
-
+## wget https://raw.githubusercontent.com/prakashex/dotfiles-apollo/popOs/install.sh && chmod +x install.sh &&  yes Y | ./install.sh
 
 
 
