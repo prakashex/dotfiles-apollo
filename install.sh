@@ -49,6 +49,11 @@ wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
 sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
 fc-cache -vf
 
+## vscode terminal powerline fonts
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/Meslo.zip
+sudo unzip Meslo.zip -d /usr/share/fonts/
+
 ## install dracula icons
 
 cd ~
