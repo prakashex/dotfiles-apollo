@@ -64,6 +64,12 @@ wget https://github.com/dracula/gtk/archive/master.zip
 sudo unzip master.zip -d /usr/share/themes
 sudo mv /usr/share/themes/gtk-master/ /usr/share/themes/dracula
 
+## Install Mousepad
+
+sudo apt install wget apt-transport-https gnupg2 software-properties-common
+sudo add-apt-repository ppa:xubuntu-dev/staging
+sudo apt install mousepad
+
 
 # install picom build dependencies
 
@@ -104,6 +110,13 @@ config config status.showUntrackedFiles no
 git config --global user.email "prakashope@gmail.com"
 git config --global user.name "Prakash"
 
+
+
+
+# install vscode context menu extension for nautilus 
+
+wget -qO- https://raw.githubusercontent.com/cra0zy/code-nautilus/master/install.sh | bash
+
 # docker install docs
 
 
@@ -121,6 +134,7 @@ git config --global user.name "Prakash"
 ## automatic install script 
 
 ## yes Y | command-that-asks-for-input
+
 
 
 
