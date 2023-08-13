@@ -21,7 +21,7 @@ sudo apt upgrade
 
 ## install polybar rofi nitrogen lxappearance acpi
 
-sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free  regolith-i3-workspace-config
+sudo apt install polybar rofi nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free  regolith-i3-workspace-config python-is-python3
 
 
 ## installing firefox nightly and brave
