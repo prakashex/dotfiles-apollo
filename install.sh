@@ -70,6 +70,11 @@ sudo apt install wget apt-transport-https gnupg2 software-properties-common
 sudo add-apt-repository ppa:xubuntu-dev/staging
 sudo apt install mousepad
 
+## Prevent app store from getting started on startup
+
+cd /etc/xdg/autostart/
+
+sudo mv io.elementary.appcenter-daemon.desktop io.elementary.appcenter-daemon.desktop.bak
 
 # install picom build dependencies
 
