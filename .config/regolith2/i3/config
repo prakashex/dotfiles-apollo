@@ -402,7 +402,7 @@ exec --no-startup-id dex --autostart --environment i3
 #exec_always --no-startup-id conky
 
 # start a script to setup displays
-# uncomment the next line, use arandr to setup displays and save the file as monitor:
+# uncomment the next line, use arandr to setup displays and save the 	as monitor:
 exec --no-startup-id ~/.screenlayout/monitor.sh
 
 # set wallpaper
@@ -670,20 +670,27 @@ exec_always --no-startup-id ~/.config/polybar/scripts/launch-polybar.sh &
 #bindsym $mod+m scratchpad show; move position center
 
 
-bindsym $mod+m [class="Xfce4-terminal"] scratchpad show; move position center
+bindsym $mod+m [class="Xfce4-terminal" title="dropdown"] scratchpad show; move position center
 bindsym $mod+c [class="fox"] scratchpad show; move position center
-bindsym $mod+x [class="Nemo"] scratchpad show; move position center
+
+
+set $thunar_id 0x07c00007
+
+#set $thunar_window wmctrl -lx | grep "float.Thunar" | awk '{print $1}'
 
 for_window [class="Xfce4-terminal" title="dropdown"] floating enable,move scratchpad,border pixel 4,resize set 1025 600
-for_window [class="fox"] floating enable,move scratchpad,border pixel 4,resize set 778 724
-for_window [class="Nemo" instance="float"] floating enable,move scratchpad,border pixel 4,resize set 825 800
+for_window [class="fox"] floating enable,move scratchpad,border pixel 4,resize set 934 724
 
 exec_always --no-startup-id pgrep -f '^xfce4-terminal --title dropdown' || xfce4-terminal --title dropdown
 #exec_always --no-startup-id pgrep -f '^nitrogen --name wallpaper' || nitrogen --name wallpaper
 #exec_always --no-startup-id pgrep -f '^firefox-trunk --class fox' || firefox-trunk --class fox
-exec_always --no-startup-id pgrep -l 'firefox-trunk' || firefox-trunk --class fox
-exec_always --no-startup-id pgrep -f '^nemo --name float' || nemo --name float
+exec_always --no-startup-id pgrep -l 'firefox-trunk --class fox' || firefox-trunk --class fox
+exec_always --no-startup-id pgrep -f '^nemo --class float' || DBUS_SESSION_BUS_ADDRESS="" nemo --class float
 
+
+for_window [class="float"] floating enable,move scratchpad,border pixel 4,resize set 825 800
+
+bindsym $mod+x [class="float"] scratchpad show; move position center
 
 
 #exec_always --no-startup-id nautilus --name testing
