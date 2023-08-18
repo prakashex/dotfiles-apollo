@@ -684,7 +684,7 @@ for_window [class="fox"] floating enable,move scratchpad,border pixel 4,resize s
 exec_always --no-startup-id pgrep -f '^xfce4-terminal --title dropdown' || xfce4-terminal --title dropdown
 #exec_always --no-startup-id pgrep -f '^nitrogen --name wallpaper' || nitrogen --name wallpaper
 #exec_always --no-startup-id pgrep -f '^firefox-trunk --class fox' || firefox-trunk --class fox
-exec_always --no-startup-id pgrep -l 'firefox-trunk --class fox' || firefox-trunk --class fox
+exec_always --no-startup-id pgrep -l '^firefox-trunk' || firefox-trunk --class fox
 exec_always --no-startup-id pgrep -f '^nemo --class float' || DBUS_SESSION_BUS_ADDRESS="" nemo --class float
 
 
