@@ -50,6 +50,8 @@ sudo apt install brave-browser
 
 ## install fonts
 
+sudo apt install fonts-firacode
+
 wget https://github.com/Prakashh21/Fonts/archive/refs/tags/v4.0.zip
 sudo bsdtar --strip-components=1 -xvf v4.0.zip -C /usr/share/fonts/
 fc-cache -vf
