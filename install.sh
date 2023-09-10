@@ -46,7 +46,19 @@ sudo apt update
 sudo apt install brave-browser
 
 
+## download deb files
 
+mkdir deb_installers
+cd deb_installers
+
+# download google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+# download vs code
+curl -o code.deb -L http://go.microsoft.com/fwlink/?LinkID=760868
+
+# install .deb files
+sudo dpkg -i *.deb
 
 ## install fonts
 
@@ -104,7 +116,6 @@ sudo apt-get install -y nodejs
 ## remove regolith config
 
 sudo apt remove regolith-i3-workspace-config
-
 
 ## pull config
 
