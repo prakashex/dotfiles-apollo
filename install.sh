@@ -108,6 +108,14 @@ sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev l
 
 sudo apt-get install meson ninja-build
 
+
+########## install pywal
+
+sudo apt install imagemagick
+
+pip3 install pywal
+
+
 #install nodeJS
 
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&\
