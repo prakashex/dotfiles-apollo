@@ -13,7 +13,8 @@ configuration {
 }
 
 @theme "~/.config/rofi/themes/theme.rasi"
-
+// pywall colors
+@import "~/.cache/wal/colors-rofi-dark"
 
 // Main //
 window {
