@@ -43,6 +43,17 @@ workspace_layout default
 # Each new window will open fullscreen as a tab (left to right)
 #workspace_layout tabbed
 
+
+
+
+
+
+
+#################### 
+
+default_border pixel 1
+default_floating_border pixel 1
+
 ##############################
 # extra options for windows: #
 ##############################
