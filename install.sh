@@ -21,12 +21,12 @@ sudo apt upgrade
 
 ## install polybar rofi nitrogen lxappearance acpi
 
-sudo apt install polybar rofi flameshot transmission-gtk telegram-desktop mpv htop feh gh python3 python3-pip vim git nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free regolith-i3-workspace-config python-is-python3
+sudo apt install polybar rofi flameshot transmission-gtk telegram-desktop mpv htop feh gh python3 python3-pip vim git nitrogen lxappearance libarchive-tools nemo xfce4-terminal gnome-tweaks intel-media-va-driver-non-free regolith-i3-workspace-config python-is-python3 network-manager-gnome
 
 
 ## install postman
 
-flatpak install flathub com.getpostman.Postman -y
+# flatpak install flathub com.getpostman.Postman -y
 
 
 ## installing firefox nightly and brave
