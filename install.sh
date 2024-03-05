@@ -55,10 +55,20 @@ cd deb_installers
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 # download vs code
-curl -o code.deb -L http://go.microsoft.com/fwlink/?LinkID=760868
+#curl -o code.deb -L http://go.microsoft.com/fwlink/?LinkID=760868 
+
+# download ferdium 
+
+curl -o ferdium.deb -L https://github.com/ferdium/ferdium-app/releases/download/v6.7.0/Ferdium-linux-6.7.0-amd64.deb
 
 # install .deb files
 sudo dpkg -i *.deb
+
+## install vs code 
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
+sudo add-apt-repository -y "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt -y install code
 
 ## install fonts
 
