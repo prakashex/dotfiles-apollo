@@ -128,7 +128,7 @@ pip3 install pywal
 
 #install nodeJS
 
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&\
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 
 ## remove regolith config
@@ -148,7 +148,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 config checkout popOs
 config config status.showUntrackedFiles no
 
-git config --global user.email "prakashope@gmail.com"
+git config --global user.email "qxprakash@gmail.com"
 git config --global user.name "Prakash"
 
 
