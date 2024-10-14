@@ -331,6 +331,7 @@ set $ws10 "10"
 assign [class="Xfce4-terminal"] $ws1
 assign [class="(?i)firefox"] $ws2
 assign [class="Google-chrome"] $ws2
+assign [class="zen-alpha"] $ws2
 #assign [class="Thunar"] $ws3
 assign [class="Code"] $ws4
 assign [class="TelegramDesktop"] $ws5
