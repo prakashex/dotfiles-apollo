@@ -28,6 +28,14 @@ font pango: Noto Sans Regular 10
 # set the mod key to the winkey:
 set $mod Mod4
 
+
+# Move workspace to the output on the left
+bindsym $mod+Shift+comma move workspace to output left
+
+# Move workspace to the output on the right
+bindsym $mod+Shift+period move workspace to output right
+
+
 #####################
 # workspace layout: #
 #####################
