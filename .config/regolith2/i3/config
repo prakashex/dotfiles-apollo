@@ -48,6 +48,13 @@ workspace_layout default
 
 
 
+# Move workspace to the output on the left
+bindsym $mod+Shift+comma move workspace to output left
+
+# Move workspace to the output on the right
+bindsym $mod+Shift+period move workspace to output right
+
+
 
 #################### 
 
