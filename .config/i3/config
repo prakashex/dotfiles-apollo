@@ -28,6 +28,14 @@ font pango: Noto Sans Regular 10
 # set the mod key to the winkey:
 set $mod Mod4
 
+
+# Move workspace to the output on the left
+bindsym $mod+Shift+comma move workspace to output left
+
+# Move workspace to the output on the right
+bindsym $mod+Shift+period move workspace to output right
+
+
 #####################
 # workspace layout: #
 #####################
@@ -48,7 +56,13 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 1
+#new_window pixel 1
+
+
+default_border pixel 2
+default_floating_border pixel 1
+for_window [class="^.*"] border pixel 2
+
 
 # thin borders
 # hide_edge_borders both
@@ -325,6 +339,7 @@ set $ws10 "10"
 assign [class="Xfce4-terminal"] $ws1
 assign [class="(?i)firefox"] $ws2
 assign [class="Google-chrome"] $ws2
+assign [class="zen-alpha"] $ws2
 #assign [class="Thunar"] $ws3
 assign [class="Code"] $ws4
 assign [class="TelegramDesktop"] $ws5
@@ -446,7 +461,7 @@ exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 #exec --no-startup-id blueberry-tray
 
 # networkmanager-applet
-#exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet
 
 # clipman-applet
 #exec --no-startup-id xfce4-clipman
