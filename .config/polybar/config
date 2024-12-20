@@ -6,14 +6,24 @@
 ; Include powerline utility
 include-file = /home/prakash/.config/polybar/scripts/powerline-for-polybar-master/powerline-for-polybar.config  
 
+
 [colors]
-background = #282a36
-background-alt = #44475a
-foreground = #f8f8f2
-foreground-alt = #ff79c6
-primary = #6272a4
-secondary = #ffb86c
-alert = #ff5555
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+
+
+#[colors]
+#background = #282a36
+#background-alt = #44475a
+#foreground = #f8f8f2
+#foreground-alt = #ff79c6
+#primary = #6272a4
+#secondary = #ffb86c
+#alert = #ff5555
 
 
 ## default colors
@@ -375,7 +385,7 @@ background        = ${colors.green}
 background-next   = ${colors.background}
 ; Other settings
 type = internal/network
-interface = wlan0
+interface = wlo1
 interval = 1.0
 label-connected = " %downspeed%  %upspeed% "
 label-disconnected =" disconnected "
@@ -424,11 +434,11 @@ format-background = ${colors.background}
 format-foreground = ${colors.foreground}
 format-padding = 1
 ;label = %title% 
-label = "  %title%"
+label = "   %title%"
 label-maxlen = 50
 label-minlen = 40
 label-alignment = center
-label-empty = "   GNU/Linux@Prakash"
+label-empty = "   GNU/Linux@Prakash"
 label-separator = " "
 label-empty-foreground = ${colors.foreground}
 label-font = 4
